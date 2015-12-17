@@ -35,9 +35,10 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   background: #eee;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3e3e3), to(#ffffff));
-  background-image: -webkit-linear-gradient(bottom, #e3e3e3, #ffffff);
-  background-image: -moz-linear-gradient(bottom, #e3e3e3, #ffffff);
-  background-image: -o-linear-gradient(bottom, #e3e3e3, #ffffff);
-  background-image: linear-gradient(to top, #e3e3e3, #ffffff);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3e3e3), to(#fff));
+  background-image: -webkit-linear-gradient(bottom, #e3e3e3, #fff);
+  background-image: -moz-linear-gradient(bottom, #e3e3e3, #fff);
+  background-image: -o-linear-gradient(bottom, #e3e3e3, #fff);
+  background-image: linear-gradient(to top, #e3e3e3, #fff);
 }
+/*# sourceMappingURL=field_editor.css.map */

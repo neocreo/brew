@@ -3,8 +3,8 @@
       <div class="container">
 
   			<div id="content" class="row clearfix">
-
-					<div id="main" class="col-md-8 clearfix" role="main">
+  					<?php get_template_part( 'library/sidebars/sidebar','subpage' );?>
+					<div id="main" class="col-sm-9 clearfix" role="main">
 
             <!-- UNCOMMENT FOR BREADCRUMBS
             <?php if ( function_exists('custom_breadcrumb') ) { custom_breadcrumb(); } ?> -->

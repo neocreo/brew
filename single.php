@@ -3,8 +3,9 @@
     <div class="container">  
 
 			<div id="content" class="clearfix row">
+				<?php get_template_part( 'library/sidebars/sidebar','subpage' );?>
 
-				<div id="main" class="col-md-8 clearfix" role="main">
+				<div id="main" class="col-sm-9 clearfix" role="main">
 
         		<?php get_template_part( 'breadcrumb' ); ?>
 
@@ -113,7 +114,6 @@
 
 				</div> <?php // end #main ?>
 
-				<?php get_sidebar(); ?>
 
 			</div> <?php // end #content ?>
 

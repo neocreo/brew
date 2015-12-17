@@ -9,8 +9,9 @@ Template Name: Page - Right Sidebar
       <div class="container">
 
         <div id="content" class="clearfix row">
+          <?php get_template_part( 'library/sidebars/sidebar','subpage' );?>
         
-          <div id="main" class="col-md-8 clearfix" role="main">
+          <div id="main" class="col-xs-9 clearfix" role="main">
 
           <?php get_template_part( 'breadcrumb' ); ?>
 
@@ -56,7 +57,6 @@ Template Name: Page - Right Sidebar
         
           </div> <!-- end #main -->
 
-          <?php get_sidebar(); ?>
       
         </div> <!-- end #content -->
 

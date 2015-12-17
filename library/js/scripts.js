@@ -64,6 +64,38 @@ jQuery(document).ready(function($) {
     if (responsive_viewport > 1030) {
         
     }
+
+    /*Promos in sidebar*/
+    var promocount = $('#frontpage-widgets aside').length;
+    if ($('#frontpage-widgets').length > 0) {
+        var promosize ='';
+        switch(promocount){
+            case 1:
+            promosize = 'col-xs-12';
+            break;
+            case 2:
+            promosize = 'col-xs-6';
+            break;
+            case 12:
+            case 3:
+            promosize = 'col-xs-4';
+            break;
+            case 8:
+            case 4:
+            promosize = 'col-xs-3';
+            break;
+            case 5:
+            case 6:
+            promosize = 'col-xs-2';
+            break;
+            default:
+            promosize = 'col-xs-4';
+            break;
+        }
+        $('#frontpage-widgets').addClass('row');
+        $('#frontpage-widgets aside').addClass(promosize);
+    }
+    
     
 	
 	// add all your scripts here

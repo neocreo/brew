@@ -108,83 +108,64 @@ you like. Enjoy!
 
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
-	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+	 // Load our Widget Area Names and ID's into an Array
+		$widgets = array (
+		//array(
+		//	'name' => __( 'Slideshow', 'bonestheme' ),
+		//	'id' => 'sidebar-slideshow',
+		//	'desc' => __( 'Only visible on frontpage under the header', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Frontpage', 'bonestheme' ),
+			'id' => 'sidebar-frontpage',
+			'desc' => __( 'Only visible on frontpage under the slideshow', 'bonestheme' ) ),
+		array(
+			'name' =>__( 'Subpage', 'bonestheme' ),
+			'id' => 'sidebar-subpage',
+			'desc' => __( 'Visible on subpages in a column', 'bonestheme' ) ),
+		//array(
+		//	'name' => __( 'Secondary', 'bonestheme' ),
+		//	'id' => 'sidebar-secondary',
+		//	'desc' => __( 'Left column', 'bonestheme' ) ),
+		//array(
+		//	'name' => __( 'Supplemental', 'bonestheme' ),
+		//	'id' => 'sidebar-supplemental',
+		//	'desc' => __( 'Right column', 'bonestheme' ) ),
+		//array(
+		//	'name' => __( 'Header', 'bonestheme' ),
+		//	'id' => 'sidebar-header',
+		//	'desc' => __( 'At the top of the page', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Footer Widget 1', 'bonestheme' ),
+			'id' => 'footer-1',
+			'desc' => __( 'At the far bottom on the page', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Footer Widget 2', 'bonestheme' ),
+			'id' => 'footer-2',
+			'desc' => __( 'At the far bottom on the page', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Footer Widget 3', 'bonestheme' ),
+			'id' => 'footer-3',
+			'desc' => __( 'At the far bottom on the page', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Footer Widget 4', 'bonestheme' ),
+			'id' => 'footer-4',
+			'desc' => __( 'At the far bottom on the page', 'bonestheme' ) ),
+		);
+		/* Loop through the array and add our Widgetised areas */
+		foreach ($widgets as $widget) {
+			register_sidebar( array(
+				'name' => $widget['name'],
+				'id' => $widget['id'],
+				'description' => $widget['desc'],
+				'before_widget' => '<aside id="%1$s" class="widget-container %2$s">',
+				'after_widget' => '</aside>',
+				'before_title' => '<h3  class="widget-title">',
+				'after_title' => '</h3>',
+			) );
+		}
 
-
-// add footer widgets
-
-  register_sidebar(array(
-    'id' => 'footer-1',
-    'name' => __( 'Footer Widget 1', 'bonestheme' ),
-    'description' => __( 'The first footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-  register_sidebar(array(
-    'id' => 'footer-2',
-    'name' => __( 'Footer Widget 2', 'bonestheme' ),
-    'description' => __( 'The second footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-  register_sidebar(array(
-    'id' => 'footer-3',
-    'name' => __( 'Footer Widget 3', 'bonestheme' ),
-    'description' => __( 'The third footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-    register_sidebar(array(
-    'id' => 'footer-4',
-    'name' => __( 'Footer Widget 4', 'bonestheme' ),
-    'description' => __( 'The fourth footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-	/*
-	to add more sidebars or widgetized areas, just copy
-	and edit the above sidebar code. In order to call
-	your new sidebar just use the following code:
-
-	Just change the name to whatever your new
-	sidebar's id is, for example:
-
-	register_sidebar(array(
-		'id' => 'sidebar2',
-		'name' => __( 'Sidebar 2', 'bonestheme' ),
-		'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-
-	To call the sidebar in your template, you can just copy
-	the sidebar.php file and rename it to your sidebar's name.
-	So using the above example, it would be:
-	sidebar-sidebar2.php
-
-	*/
+		
+		
 } // don't remove this bracket!
 
 

@@ -2,379 +2,2917 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-02 22:11+0100\n"
+"POT-Creation-Date: 2015-12-16 16:29+0100\n"
 "PO-Revision-Date: \n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"Last-Translator: Daniel Hansson <web@neocreo.net>\n"
+"Language-Team: Neocreo <web@neocreo.net>\n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;_n\n"
-"X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
-"Last-Translator: Mathias Hellquist <mathias.hellquist@gmail.com>\n"
-"X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
+"X-Poedit-KeywordsList: __;_e;_n;esc_attr__;esc_attr_e;__ngettext:1,2;_n:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_ex:1,2c;esc_attr_x:1,2c;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: ../..\n"
 
-#: comments.php:12
+#: ../../archive-custom_type.php:22
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span>."
+msgstr ""
+"Postat <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> av "
+"<span class=\"author\">%3$s</span>."
+
+#: ../../archive-custom_type.php:22 ../../functions.php:199
+#: ../../single-custom_type.php:32 ../../taxonomy-custom_cat.php:34
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: ../../archive-custom_type.php:46 ../../archive.php:95 ../../index.php:78
+#: ../../search.php:50 ../../taxonomy-custom_cat.php:57
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Äldre inlägg"
+
+#: ../../archive-custom_type.php:47 ../../archive.php:96 ../../index.php:79
+#: ../../search.php:51 ../../taxonomy-custom_cat.php:58
+msgid "Newer Entries &raquo;"
+msgstr "Nyare inlägg &raquo;"
+
+#: ../../archive-custom_type.php:56 ../../archive.php:105 ../../index.php:88
+#: ../../search.php:60 ../../single-custom_type.php:58 ../../single.php:102
+#: ../../taxonomy-custom_cat.php:67
+msgid "Oops, Post Not Found!"
+msgstr "Kunde inte hittas"
+
+#: ../../archive-custom_type.php:59 ../../archive.php:108 ../../index.php:91
+#: ../../search.php:63 ../../single-custom_type.php:61 ../../single.php:105
+#: ../../taxonomy-custom_cat.php:70
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr "Något saknas, testa att kolla stavningen."
+
+#: ../../archive-custom_type.php:62
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: ../../archive.php:13 ../../taxonomy-custom_cat.php:24
+msgid "Posts Categorized:"
+msgstr "Kategoriserade inlägg:"
+
+#: ../../archive.php:18
+msgid "Posts Tagged:"
+msgstr "Taggade inlägg"
+
+#: ../../archive.php:27
+msgid "Posts By:"
+msgstr "Inlägg av:"
+
+#: ../../archive.php:32
+msgid "Daily Archives:"
+msgstr "Dagsarkiv"
+
+#: ../../archive.php:37
+msgid "Monthly Archives:"
+msgstr "Månadsarkiv"
+
+#: ../../archive.php:42
+msgid "Yearly Archives:"
+msgstr "Årsarkiv"
+
+#: ../../archive.php:73 ../../index.php:55 ../../single.php:56
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: ../../archive.php:80 ../../index.php:62 ../../search.php:34
+#: ../../single.php:63
+#, php-format
+msgid "in %1$s&nbsp;&nbsp;"
+msgstr "i %1$s&nbsp;&nbsp;"
+
+#: ../../archive.php:80 ../../index.php:62 ../../search.php:34
+#: ../../single.php:63
+msgid "<i class=\"fa fa-tags\"></i>"
+msgstr "<i class=\"fa fa-tags\"></i>"
+
+#: ../../archive.php:111
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: ../../author-info.php:15
+#, php-format
+msgid "About %s"
+msgstr "Om %s"
+
+#: ../../comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Detta inlägg är lösenordsskyddat. Skriv in lösenordet för att se kommentarer."
+msgstr ""
+"Detta inlägg är lösenordsskyddat. Skriv in lösenordet för att se kommentarer."
 
-#: comments.php:23
-msgid "Response"
-msgstr "Svar"
+#: ../../comments.php:25
+msgid "<span>No</span> Responses"
+msgstr "<span>Inga</span> Reaktioner"
 
-#: comments.php:24
-msgid "Responses"
-msgstr "Svar"
+#: ../../comments.php:25
+msgid "<span>One</span> Response"
+msgstr "<span>En</span> Reaktion"
 
-#: comments.php:25
-msgid "One"
-msgstr "En"
+#: ../../comments.php:25
+msgid "<span>%</span> Response"
+msgid_plural "<span>%</span> Responses"
+msgstr[0] "<span>%</span> Reaktion"
+msgstr[1] "<span>%</span> Reaktioner"
 
-#: comments.php:26
-msgid "No"
-msgstr "Nej"
+#: ../../comments.php:50
+msgid "<i class=\"fa fa-chevron-left\"></i>"
+msgstr "<i class=\"fa fa-chevron-left\"></i>"
 
-#: comments.php:32
-msgid "to"
-msgstr "till"
+#: ../../comments.php:53
+msgid "Next Comments  "
+msgstr "Nästa kommentar"
 
-#: comments.php:59
-msgid "Comments are closed."
-msgstr "Det går inte längre att kommentera."
-
-#: comments.php:70
+#: ../../comments.php:62
 msgid "Leave a Reply"
 msgstr "Lämna en kommentar"
 
-#: comments.php:70
+#: ../../comments.php:62
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr "Lämna en kommentar till %s"
 
-#: comments.php:78
-msgid "You must be"
-msgstr "Du måste vara"
+#: ../../comments.php:70
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr "Du måste vara %1$sinloggad%2$s för att skriva en kommentar."
 
-#: comments.php:78
-msgid "logged in"
-msgstr "inloggad"
-
-#: comments.php:78
-msgid "to post a comment"
-msgstr "för att kunna kommentera"
-
-#: comments.php:86
+#: ../../comments.php:78
 msgid "Logged in as"
 msgstr "Inloggad som"
 
-#: comments.php:86
+#: ../../comments.php:78
 msgid "Log out of this account"
 msgstr "Logga ut från detta konto"
 
-#: comments.php:86
+#: ../../comments.php:78
 msgid "Log out"
 msgstr "Logga ut"
 
-#: comments.php:93
+#: ../../comments.php:78 ../../library/brew.php:28 ../brew.php:28
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: ../../comments.php:85
 msgid "Name"
 msgstr "Namn"
 
-#: comments.php:93
-#: comments.php:98
+#: ../../comments.php:85 ../../comments.php:90
 msgid "(required)"
 msgstr "(obligatorisk)"
 
-#: comments.php:94
-msgid "Your Name"
+#: ../../comments.php:86
+msgid "Your Name*"
 msgstr "Ditt namn"
 
-#: comments.php:98
-msgid "Email"
+#: ../../comments.php:90
+msgid "Mail"
 msgstr "E-post"
 
-#: comments.php:99
-msgid "Your Email"
-msgstr "Din E-post"
+#: ../../comments.php:91
+msgid "Your E-Mail*"
+msgstr "Din E-post*"
 
-#: comments.php:100
-msgid "will not be published"
-msgstr "kommer inte att bli publicerad"
+#: ../../comments.php:92
+msgid "(will not be published)"
+msgstr "(kommer inte att visas)"
 
-#: comments.php:104
+#: ../../comments.php:96
 msgid "Website"
 msgstr "Webbsajt"
 
-#: comments.php:105
-msgid "Your Website"
-msgstr "Din webbsajt"
+#: ../../comments.php:97
+msgid "Got a website?"
+msgstr "Har du en webbplats?"
 
-#: comments.php:112
-msgid "Your Comment Here..."
-msgstr "Din kommentar här..."
+#: ../../comments.php:104
+msgid "Your Comment here..."
+msgstr "Din kommentar här"
 
-#: comments.php:115
-msgid "Submit Comment"
-msgstr "Skicka kommentar"
+#: ../../comments.php:107
+msgid "Submit"
+msgstr "Skicka"
 
-#: comments.php:120
-msgid "You can use these tags"
-msgstr "Du kan använda dessa taggar"
+#: ../../comments.php:140
+msgid "Trackbacks and Pingbacks:"
+msgstr ""
 
-#: header.php:23
+#: ../../functions.php:118
+msgid "Frontpage"
+msgstr "Framsida"
+
+#: ../../functions.php:120
+msgid "Only visible on frontpage under the slideshow"
+msgstr "Bara synligt på framsidan"
+
+#: ../../functions.php:122
+msgid "Subpage"
+msgstr "Undersida"
+
+#: ../../functions.php:124
+msgid "Visible on subpages in a column"
+msgstr "Synlig på undersidor"
+
+#: ../../functions.php:138
+msgid "Footer Widget 1"
+msgstr "Footer Widget 1"
+
+#: ../../functions.php:140 ../../functions.php:144 ../../functions.php:148
+#: ../../functions.php:152
+msgid "At the far bottom on the page"
+msgstr "På botten av sidan"
+
+#: ../../functions.php:142
+msgid "Footer Widget 2"
+msgstr "Footer Widget 2"
+
+#: ../../functions.php:146
+msgid "Footer Widget 3"
+msgstr "Footer Widget 3"
+
+#: ../../functions.php:150
+msgid "Footer Widget 4"
+msgstr "Footer Widget 4"
+
+#: ../../functions.php:198
 #, php-format
-msgid "Page %s"
-msgstr "Sida %s"
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
 
-#: taxonomy-custom_cat.php:22
-#: archive.php:9
-msgid "Posts Categorized:"
-msgstr "Kategoriserade inlägg:"
-
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
-msgid "Posted"
-msgstr "Skriven"
-
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
-msgid "by"
-msgstr "av"
-
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
-msgid "filed under"
-msgstr "sorterad under"
-
-#: taxonomy-custom_cat.php:41
-msgid "Read more"
-msgstr "Läs mera"
-
-#: functions.php:103
+#: ../../functions.php:200
 msgid "(Edit)"
-msgstr "(Editera)"
+msgstr "(Redigera)"
 
-#: functions.php:107
+#: ../../functions.php:203
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar blir modererad."
 
-#: functions.php:124
-msgid "Search for:"
-msgstr "Sök efter:"
+#: ../../functions.php:222
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\"></span>"
+msgstr ""
 
-#: functions.php:125
-msgid "Search the Site..."
-msgstr "Sök på sajten..."
+#: ../../index.php:94 ../../search.php:66
+msgid "This is the error message in the index.php template."
+msgstr ""
 
-#: 404.php:11
-msgid "Epic 404 - Article Not Found"
-msgstr "Episk 404 - Sidan kan inte hittas"
+#: ../../library/admin.php:66 ../admin.php:66
+msgid "j F Y @ g:i a"
+msgstr ""
 
-#: 404.php:17
-msgid "The article you were looking for was not found, but maybe try looking again!"
-msgstr "Inlägget du letade efter kan inte hittas. Försök igen!"
+#: ../../library/admin.php:78 ../admin.php:78
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr ""
 
-#: search.php:7
-msgid "Search Results for:"
-msgstr "Sök resultat för:"
+#: ../../library/admin.php:125 ../admin.php:125
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
+"themble.com/bones\" target=\"_blank\">Bones</a>."
+msgstr ""
 
-#: search.php:23
-msgid "Read more on"
-msgstr "Läs mera på"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:338
+#: ../../library/admin/ReduxCore/framework.php:1240
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:338
+#: ../admin/ReduxCore/framework.php:1240
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
 
-#: archive.php:13
-msgid "Posts Tagged:"
-msgstr "Taggade inlägg"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:339
+#: ../../library/admin/ReduxCore/framework.php:1241
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:339
+#: ../admin/ReduxCore/framework.php:1241
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
 
-#: archive.php:17
-#: author.php:8
-msgid "Posts By:"
-msgstr "Inlägg av:"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:340
+#: ../../library/admin/ReduxCore/framework.php:1243
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:340
+#: ../admin/ReduxCore/framework.php:1243
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
 
-#: archive.php:21
-msgid "Daily Archives:"
-msgstr "Dagsarkiv"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:369
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:369
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
 
-#: archive.php:25
-msgid "Monthly Archives:"
-msgstr "Månadsarkiv"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:370
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:370
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
 
-#: archive.php:29
-msgid "Yearly Archives:"
-msgstr "Årsarkiv"
+#: ../../library/admin/ReduxCore/extensions/customizer/extension_customizer.php:371
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:371
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
 
-#: single-custom_type.php:43
-msgid "Custom Tags"
-msgstr "Special taggar"
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:112
+#: ../admin/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:112
+#, php-format
+msgid "%1$s License Key"
+msgstr ""
 
-#: embed-tags.php:3
-msgid "Tag"
-msgstr "Tagg"
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:218
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:144
+#: ../admin/ReduxCore/extensions/edd/edd_license/EDD_License_Handler.php:218
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:144
+msgid "Deactivate License"
+msgstr ""
 
-#: embed-tags.php:3
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/EDD_SL_Theme_Updater.php:54
+#: ../admin/ReduxCore/extensions/edd/edd_license/EDD_SL_Theme_Updater.php:54
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:110
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:118
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:170
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:110
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:118
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:170
+msgid "Not Activated"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:114
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:173
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:114
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:173
+msgid "Deactivated"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:116
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:77
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:119
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:176
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:116
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:77
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:119
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:176
+msgid "Valid"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:124
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:124
+msgid "Verifying license..."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:125
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:125
+msgid "Status"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:134
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:134
+msgid "Verify License"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:139
+#: ../admin/ReduxCore/extensions/edd/edd_license/field_edd_license.php:139
+msgid "Activate License"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/extensions/edd/extension_edd.php:179
+#: ../admin/ReduxCore/extensions/edd/extension_edd.php:179
+msgid "Not Valid"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:115
+#: ../../library/admin/ReduxCore/framework.php:121
+#: ../../library/admin/ReduxCore/framework.php:280
+#: ../../library/admin/ReduxCore/framework.php:283
+#: ../admin/ReduxCore/framework.php:115 ../admin/ReduxCore/framework.php:121
+#: ../admin/ReduxCore/framework.php:280 ../admin/ReduxCore/framework.php:283
+msgid "Options"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:277
+#: ../admin/ReduxCore/framework.php:277
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:277
+#: ../admin/ReduxCore/framework.php:277
+msgid "Redux Framework"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:929
+#: ../../library/admin/ReduxCore/framework.php:930
+#: ../../library/admin/ReduxCore/framework.php:1945
+#: ../admin/ReduxCore/framework.php:929 ../admin/ReduxCore/framework.php:930
+#: ../admin/ReduxCore/framework.php:1945
+msgid "Import / Export"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:940
+#: ../../library/admin/ReduxCore/framework.php:941
+#: ../../library/admin/ReduxCore/framework.php:1961
+#: ../../library/admin/ReduxCore/framework.php:2059
+#: ../admin/ReduxCore/framework.php:940 ../admin/ReduxCore/framework.php:941
+#: ../admin/ReduxCore/framework.php:1961 ../admin/ReduxCore/framework.php:2059
+msgid "Options Object"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:951
+#: ../../library/admin/ReduxCore/framework.php:952
+#: ../../library/admin/ReduxCore/framework.php:1975
+#: ../../library/admin/ReduxCore/framework.php:2079
+#: ../admin/ReduxCore/framework.php:951 ../admin/ReduxCore/framework.php:952
+#: ../admin/ReduxCore/framework.php:1975 ../admin/ReduxCore/framework.php:2079
+msgid "System Info"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1242
+#: ../admin/ReduxCore/framework.php:1242
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1493
+#: ../../library/metabox/init.php:244 ../admin/ReduxCore/framework.php:1493
+#: ../metabox/init.php:244
+msgid "Default"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1805
+#: ../admin/ReduxCore/framework.php:1805
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1859
+#: ../admin/ReduxCore/framework.php:1859
+msgid "Expand"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1861
+#: ../../library/admin/ReduxCore/framework.php:2120
+#: ../admin/ReduxCore/framework.php:1861 ../admin/ReduxCore/framework.php:2120
+msgid "Save Changes"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1863
+#: ../../library/admin/ReduxCore/framework.php:2122
+#: ../admin/ReduxCore/framework.php:1863 ../admin/ReduxCore/framework.php:2122
+msgid "Reset Section"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1865
+#: ../../library/admin/ReduxCore/framework.php:2124
+#: ../admin/ReduxCore/framework.php:1865 ../admin/ReduxCore/framework.php:2124
+msgid "Reset All"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1868
+#: ../../library/admin/ReduxCore/framework.php:2127
+#: ../admin/ReduxCore/framework.php:1868 ../admin/ReduxCore/framework.php:2127
+msgid "Working..."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1875
+#: ../admin/ReduxCore/framework.php:1875
+msgid "Settings Imported!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1877
+#: ../admin/ReduxCore/framework.php:1877
+msgid "Settings Saved!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1881
+#: ../admin/ReduxCore/framework.php:1881
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1882
+#: ../admin/ReduxCore/framework.php:1882
+msgid "error(s) were found!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:1883
+#: ../admin/ReduxCore/framework.php:1883
+msgid "warning(s) were found!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2012
+#: ../admin/ReduxCore/framework.php:2012
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2013
+#: ../admin/ReduxCore/framework.php:2013
+msgid "Import Options"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2014
+#: ../admin/ReduxCore/framework.php:2014
+msgid "Import from file"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2014
+#: ../admin/ReduxCore/framework.php:2014
+msgid "Import from URL"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2019
+#: ../admin/ReduxCore/framework.php:2019
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2029
+#: ../admin/ReduxCore/framework.php:2029
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2036
+#: ../admin/ReduxCore/framework.php:2036
+msgid "Import"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2036
+#: ../admin/ReduxCore/framework.php:2036
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2039
+#: ../admin/ReduxCore/framework.php:2039
+msgid "Export Options"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2041
+#: ../admin/ReduxCore/framework.php:2041
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2045
+#: ../admin/ReduxCore/framework.php:2045
+msgid "Copy"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2045
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:590
+#: ../admin/ReduxCore/framework.php:2045
+#: ../metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../metabox/helpers/cmb_Meta_Box_types.php:590
+msgid "Download"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2045
+#: ../admin/ReduxCore/framework.php:2045
+msgid "Copy Link"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/framework.php:2068
+#: ../admin/ReduxCore/framework.php:2068
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:112
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:125
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:112
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:125
+msgid "All"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:125
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:149
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:125
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:149
+msgid "Top"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:132
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:156
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:132
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:156
+msgid "Right"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:139
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:163
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:139
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:163
+msgid "Bottom"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:146
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:170
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:146
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:170
+msgid "Left"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/border/field_border.php:162
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:162
+msgid "Border style"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/color/field_color.php:72
+#: ../../library/admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:81
+#: ../../library/admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../../library/admin/ReduxCore/inc/fields/color_rgba/field_color_rgba.php:84
+#: ../admin/ReduxCore/inc/fields/color/field_color.php:72
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:81
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../admin/ReduxCore/inc/fields/color_rgba/field_color_rgba.php:84
+msgid "Transparent"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:73
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:73
+msgid "From "
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:84
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:84
+msgid "To "
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:139
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:139
+msgid "Width"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:155
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:155
+msgid "height"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:168
+#: ../../library/admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:169
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:181
+#: ../../library/admin/ReduxCore/inc/fields/spacing/field_spacing.php:182
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:168
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:169
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:181
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:182
+msgid "Units"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/gallery/field_gallery.php:77
+#: ../../library/admin/sample/sample-config.php:294
+#: ../admin/ReduxCore/inc/fields/gallery/field_gallery.php:77
+#: ../admin/sample/sample-config.php:294
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/gallery/field_gallery.php:78
+#: ../admin/ReduxCore/inc/fields/gallery/field_gallery.php:78
+msgid "Clear Gallery"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/group/field_group.php:71
+#: ../admin/ReduxCore/inc/fields/group/field_group.php:71
+msgid "New"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/group/field_group.php:84
+#: ../admin/ReduxCore/inc/fields/group/field_group.php:84
+msgid "New "
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/group/field_group.php:133
+#: ../../library/admin/ReduxCore/inc/fields/group/field_group.php:198
+#: ../admin/ReduxCore/inc/fields/group/field_group.php:133
+#: ../admin/ReduxCore/inc/fields/group/field_group.php:198
+msgid "Delete"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/group/field_group.php:203
+#: ../admin/ReduxCore/inc/fields/group/field_group.php:203
+msgid "Add"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/link_color/field_link_color.php:86
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:86
+msgid "Regular"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/link_color/field_link_color.php:90
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:90
+msgid "Hover"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/link_color/field_link_color.php:94
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:94
+msgid "Visited"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/link_color/field_link_color.php:98
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:98
+msgid "Active"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/media/field_media.php:116
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:116
+msgid "No media selected"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/media/field_media.php:150
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:117
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:180
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:150
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:117
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:180
+msgid "Upload"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/media/field_media.php:156
+#: ../../library/admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:75
+#: ../../library/admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:78
+#: ../../library/admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:81
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:123
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:182
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:178
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:590
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:156
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:75
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:78
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:81
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:123
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:182
+#: ../metabox/helpers/cmb_Meta_Box_types.php:178
+#: ../metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../metabox/helpers/cmb_Meta_Box_types.php:590
+msgid "Remove"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:65
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:65
+msgid "Add More"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/password/field_password.php:55
+#: ../admin/ReduxCore/inc/fields/password/field_password.php:55
+msgid "Password"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/password/field_password.php:56
+#: ../admin/ReduxCore/inc/fields/password/field_password.php:56
+msgid "Username"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/select/field_select.php:69
+#: ../../library/admin/ReduxCore/inc/fields/select_image/field_select_image.php:59
+#: ../admin/ReduxCore/inc/fields/select/field_select.php:69
+#: ../admin/ReduxCore/inc/fields/select_image/field_select_image.php:59
+msgid "Select an item"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/select/field_select.php:110
+#: ../../library/admin/ReduxCore/inc/fields/select_image/field_select_image.php:134
+#: ../admin/ReduxCore/inc/fields/select/field_select.php:110
+#: ../admin/ReduxCore/inc/fields/select_image/field_select_image.php:134
+msgid "No items of this type were found."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:128
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:187
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:128
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:187
+msgid "Title"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:129
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:189
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:129
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:189
+msgid "Description"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:130
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:191
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:130
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:191
+msgid "URL"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:138
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:200
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:138
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:200
+msgid "Select an Option"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:158
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:220
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:158
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:220
+msgid "Delete Slide"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/slides/field_slides.php:223
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:223
+msgid "Add Slide"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:109
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:109
+msgid "Font family"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:150
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:150
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:186
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:190
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:186
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:190
+msgid "Font style"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:190
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:190
+msgid "Style"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:216
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:216
+msgid "Font subsets"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:217
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:217
+msgid "Subsets"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:217
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:217
+msgid "Font script"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:235
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:235
+msgid "Size"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:244
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:244
+msgid "Height"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:252
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:252
+msgid "Word Spacing"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:260
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:260
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:274
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:274
+msgid "Backup Font Family"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:294
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:294
+msgid "Font color"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/fields/typography/field_typography.php:569
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:569
+msgid "Google Webfonts"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/tracking.php:59
+#: ../admin/ReduxCore/inc/tracking.php:59
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/tracking.php:60
+#: ../admin/ReduxCore/inc/tracking.php:60
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test with."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/tracking.php:65
+#: ../admin/ReduxCore/inc/tracking.php:65
+msgid "Allow tracking"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/tracking.php:70
+#: ../admin/ReduxCore/inc/tracking.php:70
+msgid "Do not allow tracking"
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/color/validation_color.php:15
+#: ../../library/admin/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:15
+#: ../../library/admin/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:15
+#: ../admin/ReduxCore/inc/validation/color/validation_color.php:15
+#: ../admin/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:15
+#: ../admin/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:15
+#: ../admin/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:15
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/date/validation_date.php:15
+#: ../admin/ReduxCore/inc/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/email/validation_email.php:15
+#: ../admin/ReduxCore/inc/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+#: ../admin/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:15
+#: ../admin/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:15
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/numeric/validation_numeric.php:15
+#: ../admin/ReduxCore/inc/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../../library/admin/ReduxCore/inc/validation/url/validation_url.php:15
+#: ../admin/ReduxCore/inc/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:277
+#: ../admin/class.redux-plugin.php:277
+msgid "Redux Framework has an embedded demo."
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:277
+#: ../admin/class.redux-plugin.php:277
+msgid "Click here to activate the sample config file."
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:381
+#: ../admin/class.redux-plugin.php:381
+msgid "Github Repo"
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:382
+#: ../admin/class.redux-plugin.php:382
+msgid "Issue Tracker"
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:387
+#: ../admin/class.redux-plugin.php:387
+msgid "Deactivate Demo Mode"
+msgstr ""
+
+#: ../../library/admin/class.redux-plugin.php:389
+#: ../admin/class.redux-plugin.php:389
+msgid "Activate Demo Mode"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:106
+#: ../../library/option-config.php:106 ../admin/sample/sample-config.php:106
+#: ../option-config.php:106
+msgid "Section via hook"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:107
+#: ../../library/option-config.php:107 ../admin/sample/sample-config.php:107
+#: ../option-config.php:107
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:194
+#: ../../library/option-config.php:194 ../admin/sample/sample-config.php:194
+#: ../option-config.php:194
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:201
+#: ../../library/admin/sample/sample-config.php:204
+#: ../../library/option-config.php:201 ../../library/option-config.php:204
+#: ../admin/sample/sample-config.php:201 ../admin/sample/sample-config.php:204
+#: ../option-config.php:201 ../option-config.php:204
+msgid "Current theme preview"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:213
+#: ../../library/option-config.php:213 ../admin/sample/sample-config.php:213
+#: ../option-config.php:213
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:214
+#: ../../library/option-config.php:214 ../admin/sample/sample-config.php:214
+#: ../option-config.php:214
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:215
+#: ../../library/option-config.php:215 ../../page-full-width.php:35
+#: ../../page.php:34 ../admin/sample/sample-config.php:215
+#: ../option-config.php:215
 msgid "Tags"
 msgstr "Taggar"
 
-#: image.php:20
-msgid "Read the rest of this entry"
-msgstr "Läs resten av detta inlägg"
+#: ../../library/admin/sample/sample-config.php:219
+#: ../../library/option-config.php:219 ../admin/sample/sample-config.php:219
+#: ../option-config.php:219
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
 
-#: image.php:38
-msgid "Sorry, no attachments matched your criteria."
-msgstr "Tyvärr, inga bilagor matchade din förfrågan"
+#: ../../library/admin/sample/sample-config.php:220
+#: ../../library/option-config.php:220 ../admin/sample/sample-config.php:220
+#: ../option-config.php:220
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
 
-#: embed-prev_next.php:3
-msgid "&laquo; Older Entries"
-msgstr "&laquo; Äldre inlägg"
+#: ../../library/admin/sample/sample-config.php:250
+#: ../admin/sample/sample-config.php:250
+msgid "Home Settings"
+msgstr ""
 
-#: embed-prev_next.php:4
-msgid "Newer Entries &raquo;"
-msgstr "Nyare inlägg &raquo;"
+#: ../../library/admin/sample/sample-config.php:251
+#: ../admin/sample/sample-config.php:251
+msgid ""
+"Redux Framework was created with the developer in mind. It allows for any "
+"theme developer to have an advanced theme panel with most of the features a "
+"developer would need. For more information check out the Github repo at: <a "
+"href=\"https://github.com/ReduxFramework/Redux-Framework\">https://github."
+"com/ReduxFramework/Redux-Framework</a>"
+msgstr ""
 
-#: footer.php:9
-msgid "is powered by"
-msgstr "superkrafter via"
+#: ../../library/admin/sample/sample-config.php:258
+#: ../admin/sample/sample-config.php:258
+msgid "Web Fonts"
+msgstr ""
 
-#: embed-not_found.php:3
-msgid "Not Found"
-msgstr "Kan inte hittas"
+#: ../../library/admin/sample/sample-config.php:261
+#: ../../library/admin/sample/sample-config.php:271
+#: ../admin/sample/sample-config.php:261 ../admin/sample/sample-config.php:271
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
 
-#: embed-not_found.php:6
-msgid "Sorry, but the requested resource was not found on this site."
-msgstr "Tyvärr, det som efterfrågas kan inte hittas på denna sajt."
+#: ../../library/admin/sample/sample-config.php:262
+#: ../../library/admin/sample/sample-config.php:272
+#: ../../library/admin/sample/sample-config.php:281
+#: ../../library/admin/sample/sample-config.php:289
+#: ../admin/sample/sample-config.php:262 ../admin/sample/sample-config.php:272
+#: ../admin/sample/sample-config.php:281 ../admin/sample/sample-config.php:289
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
 
-#: sidebar.php:15
-msgid "Please activate some Widgets."
-msgstr "Vänligen aktivera några Widgets."
+#: ../../library/admin/sample/sample-config.php:268
+#: ../admin/sample/sample-config.php:268
+msgid "Media w/ URL"
+msgstr ""
 
-#: library/bones.php:52
-msgid "Read more &raquo;"
-msgstr "Läs mera &raquo;"
+#: ../../library/admin/sample/sample-config.php:279
+#: ../admin/sample/sample-config.php:279
+msgid "Media w/o URL"
+msgstr ""
 
-#: library/custom-post-type.php:24
+#: ../../library/admin/sample/sample-config.php:280
+#: ../../library/admin/sample/sample-config.php:288
+#: ../admin/sample/sample-config.php:280 ../admin/sample/sample-config.php:288
+msgid ""
+"This represents the minimalistic view. It does not have the preview box or "
+"the display URL in an input box. "
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:287
+#: ../admin/sample/sample-config.php:287
+msgid "Media No Preview"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:295
+#: ../admin/sample/sample-config.php:295
+msgid ""
+"Create a new Gallery by selecting existing or uploading new images using the "
+"WordPress native uploader"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:296
+#: ../../library/admin/sample/sample-config.php:666
+#: ../../library/admin/sample/sample-config.php:674
+#: ../../library/admin/sample/sample-config.php:691
+#: ../../library/admin/sample/sample-config.php:771
+#: ../../library/admin/sample/sample-config.php:781
+#: ../../library/admin/sample/sample-config.php:792
+#: ../../library/admin/sample/sample-config.php:799
+#: ../../library/admin/sample/sample-config.php:808
+#: ../../library/admin/sample/sample-config.php:818
+#: ../../library/admin/sample/sample-config.php:828
+#: ../../library/admin/sample/sample-config.php:847
+#: ../../library/admin/sample/sample-config.php:857
+#: ../../library/admin/sample/sample-config.php:866
+#: ../../library/admin/sample/sample-config.php:875
+#: ../../library/admin/sample/sample-config.php:884
+#: ../../library/admin/sample/sample-config.php:894
+#: ../../library/admin/sample/sample-config.php:910
+#: ../../library/admin/sample/sample-config.php:918
+#: ../../library/admin/sample/sample-config.php:927
+#: ../../library/admin/sample/sample-config.php:935
+#: ../../library/admin/sample/sample-config.php:943
+#: ../../library/admin/sample/sample-config.php:952
+#: ../../library/admin/sample/sample-config.php:960
+#: ../../library/admin/sample/sample-config.php:990
+#: ../../library/admin/sample/sample-config.php:1003
+#: ../../library/admin/sample/sample-config.php:1022
+#: ../../library/admin/sample/sample-config.php:1032
+#: ../../library/admin/sample/sample-config.php:1062
+#: ../../library/admin/sample/sample-config.php:1071
+#: ../../library/admin/sample/sample-config.php:1079
+#: ../../library/admin/sample/sample-config.php:1088
+#: ../../library/admin/sample/sample-config.php:1096
+#: ../../library/admin/sample/sample-config.php:1105
+#: ../../library/admin/sample/sample-config.php:1113
+#: ../../library/admin/sample/sample-config.php:1122
+#: ../../library/admin/sample/sample-config.php:1130
+#: ../../library/admin/sample/sample-config.php:1139
+#: ../../library/admin/sample/sample-config.php:1149
+#: ../../library/admin/sample/sample-config.php:1157
+#: ../../library/admin/sample/sample-config.php:1166
+#: ../../library/admin/sample/sample-config.php:1174
+#: ../../library/admin/sample/sample-config.php:1183
+#: ../../library/admin/sample/sample-config.php:1239
+#: ../../library/admin/sample/sample-config.php:1250
+#: ../../library/option-config.php:289 ../admin/sample/sample-config.php:296
+#: ../admin/sample/sample-config.php:666 ../admin/sample/sample-config.php:674
+#: ../admin/sample/sample-config.php:691 ../admin/sample/sample-config.php:771
+#: ../admin/sample/sample-config.php:781 ../admin/sample/sample-config.php:792
+#: ../admin/sample/sample-config.php:799 ../admin/sample/sample-config.php:808
+#: ../admin/sample/sample-config.php:818 ../admin/sample/sample-config.php:828
+#: ../admin/sample/sample-config.php:847 ../admin/sample/sample-config.php:857
+#: ../admin/sample/sample-config.php:866 ../admin/sample/sample-config.php:875
+#: ../admin/sample/sample-config.php:884 ../admin/sample/sample-config.php:894
+#: ../admin/sample/sample-config.php:910 ../admin/sample/sample-config.php:918
+#: ../admin/sample/sample-config.php:927 ../admin/sample/sample-config.php:935
+#: ../admin/sample/sample-config.php:943 ../admin/sample/sample-config.php:952
+#: ../admin/sample/sample-config.php:960 ../admin/sample/sample-config.php:990
+#: ../admin/sample/sample-config.php:1003
+#: ../admin/sample/sample-config.php:1022
+#: ../admin/sample/sample-config.php:1032
+#: ../admin/sample/sample-config.php:1062
+#: ../admin/sample/sample-config.php:1071
+#: ../admin/sample/sample-config.php:1079
+#: ../admin/sample/sample-config.php:1088
+#: ../admin/sample/sample-config.php:1096
+#: ../admin/sample/sample-config.php:1105
+#: ../admin/sample/sample-config.php:1113
+#: ../admin/sample/sample-config.php:1122
+#: ../admin/sample/sample-config.php:1130
+#: ../admin/sample/sample-config.php:1139
+#: ../admin/sample/sample-config.php:1149
+#: ../admin/sample/sample-config.php:1157
+#: ../admin/sample/sample-config.php:1166
+#: ../admin/sample/sample-config.php:1174
+#: ../admin/sample/sample-config.php:1183
+#: ../admin/sample/sample-config.php:1239
+#: ../admin/sample/sample-config.php:1250 ../option-config.php:289
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:301
+#: ../admin/sample/sample-config.php:301
+msgid "JQuery UI Slider Example 1"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:302
+#: ../admin/sample/sample-config.php:302
+msgid ""
+"JQuery UI slider description. Min: 1, max: 500, step: 3, default value: 45"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:312
+#: ../admin/sample/sample-config.php:312
+msgid "JQuery UI Slider Example 2 w/ Steps (5)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:313
+#: ../admin/sample/sample-config.php:313
+msgid ""
+"JQuery UI slider description. Min: 0, max: 300, step: 5, default value: 75"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:322
+#: ../admin/sample/sample-config.php:322
+msgid "JQuery UI Spinner Example 1"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:323
+#: ../admin/sample/sample-config.php:323
+msgid ""
+"JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:332
+#: ../admin/sample/sample-config.php:332
+msgid "Switch On"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:333
+#: ../../library/admin/sample/sample-config.php:341
+#: ../../library/admin/sample/sample-config.php:1302
+#: ../admin/sample/sample-config.php:333 ../admin/sample/sample-config.php:341
+#: ../admin/sample/sample-config.php:1302
+msgid "Look, it's on!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:340
+#: ../admin/sample/sample-config.php:340
+msgid "Switch Off"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:348
+#: ../admin/sample/sample-config.php:348
+msgid "Switch - Custom Titles"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:349
+#: ../admin/sample/sample-config.php:349
+msgid "Look, it's on! Also hidden child elements!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:359
+#: ../admin/sample/sample-config.php:359
+msgid "Switch - With Hidden Items (NESTED!)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:360
+#: ../admin/sample/sample-config.php:360
+msgid "Also called a \"fold\" parent."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:361
+#: ../admin/sample/sample-config.php:361
+msgid ""
+"Items set with a fold to this ID will hide unless this is set to the "
+"appropriate value."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:369
+#: ../admin/sample/sample-config.php:369
+msgid "Images Option (with pattern=>true)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:370
+#: ../admin/sample/sample-config.php:370
+msgid "Select a background pattern."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:420
+#: ../../library/admin/sample/sample-config.php:427
+#: ../admin/sample/sample-config.php:420 ../admin/sample/sample-config.php:427
+msgid "Slides Options"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:421
+#: ../../library/admin/sample/sample-config.php:428
+#: ../admin/sample/sample-config.php:421 ../admin/sample/sample-config.php:428
+msgid "Unlimited slides with drag and drop sortings."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:422
+#: ../../library/admin/sample/sample-config.php:498
+#: ../admin/sample/sample-config.php:422 ../admin/sample/sample-config.php:498
+msgid ""
+"This field will store all slides values into a multidimensional array to use "
+"into a foreach loop."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:504
+#: ../admin/sample/sample-config.php:504
+msgid "Preset"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:505
+#: ../../library/admin/sample/sample-config.php:507
+#: ../admin/sample/sample-config.php:505 ../admin/sample/sample-config.php:507
+msgid ""
+"This allows you to set a json string or array to override multiple "
+"preferences in your theme."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:516
+#: ../admin/sample/sample-config.php:516
+msgid "Typography"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:532
+#: ../admin/sample/sample-config.php:532
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:554
+#: ../../library/option-config.php:251 ../admin/sample/sample-config.php:554
+#: ../option-config.php:251
+msgid "General Settings"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:560
+#: ../admin/sample/sample-config.php:560
+msgid "Main Layout"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:561
+#: ../admin/sample/sample-config.php:561
+msgid ""
+"Select main content and sidebar alignment. Choose between 1, 2 or 3 column "
+"layout."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:577
+#: ../../library/option-config.php:257 ../admin/sample/sample-config.php:577
+#: ../option-config.php:257
+msgid "Tracking Code"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:578
+#: ../../library/option-config.php:258 ../admin/sample/sample-config.php:578
+#: ../option-config.php:258
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:586
+#: ../admin/sample/sample-config.php:586
+msgid "CSS Code"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:587
+#: ../admin/sample/sample-config.php:587
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:596
+#: ../admin/sample/sample-config.php:596
+msgid "JS Code"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:597
+#: ../admin/sample/sample-config.php:597
+msgid "Paste your JS code here."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:607
+#: ../admin/sample/sample-config.php:607
+msgid "Footer Text"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:608
+#: ../admin/sample/sample-config.php:608
+msgid ""
+"You can use the following shortcodes in your footer text: [wp-url] [site-"
+"url] [theme-url] [login-url] [logout-url] [site-title] [site-tagline] "
+"[current-year]"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:626
+#: ../admin/sample/sample-config.php:626
+msgid "Styling Options"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:631
+#: ../admin/sample/sample-config.php:631
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:632
+#: ../../library/admin/sample/sample-config.php:1316
+#: ../admin/sample/sample-config.php:632 ../admin/sample/sample-config.php:1316
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:640
+#: ../admin/sample/sample-config.php:640
+msgid "Body Background Color"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:641
+#: ../admin/sample/sample-config.php:641
+msgid "Pick a background color for the theme (default: #fff)."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:648
+#: ../admin/sample/sample-config.php:648
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:649
+#: ../admin/sample/sample-config.php:649
+msgid "Pick a background color for the footer (default: #dd9933)."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:656
+#: ../admin/sample/sample-config.php:656
+msgid "Color RGBA - BETA"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:657
+#: ../admin/sample/sample-config.php:657
+msgid ""
+"Gives you the RGBA color. Still quite experimental. Use at your own risk."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:664
+#: ../admin/sample/sample-config.php:664
+msgid "Header Gradient Color Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:665
+#: ../../library/admin/sample/sample-config.php:673
+#: ../../library/admin/sample/sample-config.php:689
+#: ../admin/sample/sample-config.php:665 ../admin/sample/sample-config.php:673
+#: ../admin/sample/sample-config.php:689
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:672
+#: ../admin/sample/sample-config.php:672
+msgid "Links Color Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:688
+#: ../admin/sample/sample-config.php:688
+msgid "Header Border Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:707
+#: ../admin/sample/sample-config.php:707
+msgid "Padding/Margin Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:708
+#: ../admin/sample/sample-config.php:708
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:709
+#: ../admin/sample/sample-config.php:709
+msgid ""
+"You can enable or disable any piece of this field. Top, Right, Bottom, Left, "
+"or Units."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:717
+#: ../admin/sample/sample-config.php:717
+msgid "Dimensions (Width/Height) Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:718
+#: ../admin/sample/sample-config.php:718
+msgid "Allow your users to choose width, height, and/or unit."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:719
+#: ../admin/sample/sample-config.php:719
+msgid ""
+"You can enable or disable any piece of this field. Width, Height, or Units."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:725
+#: ../admin/sample/sample-config.php:725
+msgid "Body Font"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:726
+#: ../admin/sample/sample-config.php:726
+msgid "Specify the body font properties."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:738
+#: ../admin/sample/sample-config.php:738
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:739
+#: ../admin/sample/sample-config.php:739
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:740
+#: ../admin/sample/sample-config.php:740
+msgid "This field is even CSS validated!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:746
+#: ../admin/sample/sample-config.php:746
+msgid "Custom HTML"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:747
+#: ../admin/sample/sample-config.php:747
+msgid "Just like a text box widget."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:748
+#: ../admin/sample/sample-config.php:748
+msgid "This field is even HTML validated!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:762
+#: ../admin/sample/sample-config.php:762
+msgid "Field Validation"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:763
+#: ../admin/sample/sample-config.php:763
+msgid "Validate ALL fields within Redux."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:764
+#: ../admin/sample/sample-config.php:764
+msgid ""
+"<p class=\"description\">This is the Description. Again HTML is allowed2</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:769
+#: ../admin/sample/sample-config.php:769
+msgid "Text Option - Email Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:770
+#: ../admin/sample/sample-config.php:770
+msgid ""
+"This is a little space under the Field Title in the Options table, "
+"additional info is good in here."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:779
+#: ../admin/sample/sample-config.php:779
+msgid "Text Option with Data Attributes"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:780
+#: ../admin/sample/sample-config.php:780
+msgid ""
+"You can also pass an options array if you want. Set the default to whatever "
+"you like."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:789
+#: ../admin/sample/sample-config.php:789
+msgid "Multi Text Option - Color Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:791
+#: ../admin/sample/sample-config.php:791
+msgid ""
+"If you enter an invalid color it will be removed. Try using the text \"blue"
+"\" as a color.  ;)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:797
+#: ../admin/sample/sample-config.php:797
+msgid "Text Option - URL Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:798
+#: ../admin/sample/sample-config.php:798
+msgid "This must be a URL."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:806
+#: ../admin/sample/sample-config.php:806
+msgid "Text Option - Numeric Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:807
+#: ../admin/sample/sample-config.php:807
+msgid "This must be numeric."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:816
+#: ../admin/sample/sample-config.php:816
+msgid "Text Option - Comma Numeric Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:817
+#: ../admin/sample/sample-config.php:817
+msgid "This must be a comma separated string of numerical values."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:826
+#: ../admin/sample/sample-config.php:826
+msgid "Text Option - No Special Chars Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:827
+#: ../admin/sample/sample-config.php:827
+msgid "This must be a alpha numeric only."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:835
+#: ../admin/sample/sample-config.php:835
+msgid "Text Option - Str Replace Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:836
+#: ../../library/admin/sample/sample-config.php:846
+#: ../../library/admin/sample/sample-config.php:856
+#: ../admin/sample/sample-config.php:836 ../admin/sample/sample-config.php:846
+#: ../admin/sample/sample-config.php:856
+msgid "You decide."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:837
+#: ../admin/sample/sample-config.php:837
+msgid "This field's default value was changed by a filter hook!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:845
+#: ../admin/sample/sample-config.php:845
+msgid "Text Option - Preg Replace Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:855
+#: ../admin/sample/sample-config.php:855
+msgid "Text Option - Custom Callback Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:864
+#: ../admin/sample/sample-config.php:864
+msgid "Textarea Option - No HTML Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:865
+#: ../admin/sample/sample-config.php:865
+msgid "All HTML will be stripped"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:873
+#: ../admin/sample/sample-config.php:873
+msgid "Textarea Option - HTML Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:874
+#: ../admin/sample/sample-config.php:874
+msgid "HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:882
+#: ../admin/sample/sample-config.php:882
+msgid "Textarea Option - HTML Validated Custom"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:883
+#: ../admin/sample/sample-config.php:883
+msgid "Custom HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:892
+#: ../admin/sample/sample-config.php:892
+msgid "Textarea Option - JS Validated"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:893
+#: ../admin/sample/sample-config.php:893
+msgid "JS will be escaped"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:902
+#: ../admin/sample/sample-config.php:902
+msgid "Radio/Checkbox Fields"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:903
+#: ../../library/admin/sample/sample-config.php:1015
+#: ../../library/admin/sample/sample-config.php:1231
+#: ../../library/admin/sample/sample-config.php:1334
+#: ../../library/option-config.php:340 ../admin/sample/sample-config.php:903
+#: ../admin/sample/sample-config.php:1015
+#: ../admin/sample/sample-config.php:1231
+#: ../admin/sample/sample-config.php:1334 ../option-config.php:340
+msgid ""
+"<p class=\"description\">This is the Description. Again HTML is allowed</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:908
+#: ../admin/sample/sample-config.php:908
+msgid "Checkbox Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:909
+#: ../../library/admin/sample/sample-config.php:917
+#: ../../library/admin/sample/sample-config.php:926
+#: ../../library/admin/sample/sample-config.php:934
+#: ../../library/admin/sample/sample-config.php:942
+#: ../../library/admin/sample/sample-config.php:951
+#: ../../library/admin/sample/sample-config.php:959
+#: ../../library/admin/sample/sample-config.php:973
+#: ../../library/admin/sample/sample-config.php:1021
+#: ../../library/admin/sample/sample-config.php:1031
+#: ../../library/admin/sample/sample-config.php:1061
+#: ../../library/admin/sample/sample-config.php:1070
+#: ../../library/admin/sample/sample-config.php:1078
+#: ../../library/admin/sample/sample-config.php:1087
+#: ../../library/admin/sample/sample-config.php:1095
+#: ../../library/admin/sample/sample-config.php:1104
+#: ../../library/admin/sample/sample-config.php:1112
+#: ../../library/admin/sample/sample-config.php:1121
+#: ../../library/admin/sample/sample-config.php:1129
+#: ../../library/admin/sample/sample-config.php:1138
+#: ../../library/admin/sample/sample-config.php:1156
+#: ../../library/admin/sample/sample-config.php:1165
+#: ../../library/admin/sample/sample-config.php:1173
+#: ../../library/admin/sample/sample-config.php:1182
+#: ../../library/admin/sample/sample-config.php:1190
+#: ../../library/admin/sample/sample-config.php:1238
+#: ../../library/admin/sample/sample-config.php:1249
+#: ../admin/sample/sample-config.php:909 ../admin/sample/sample-config.php:917
+#: ../admin/sample/sample-config.php:926 ../admin/sample/sample-config.php:934
+#: ../admin/sample/sample-config.php:942 ../admin/sample/sample-config.php:951
+#: ../admin/sample/sample-config.php:959 ../admin/sample/sample-config.php:973
+#: ../admin/sample/sample-config.php:1021
+#: ../admin/sample/sample-config.php:1031
+#: ../admin/sample/sample-config.php:1061
+#: ../admin/sample/sample-config.php:1070
+#: ../admin/sample/sample-config.php:1078
+#: ../admin/sample/sample-config.php:1087
+#: ../admin/sample/sample-config.php:1095
+#: ../admin/sample/sample-config.php:1104
+#: ../admin/sample/sample-config.php:1112
+#: ../admin/sample/sample-config.php:1121
+#: ../admin/sample/sample-config.php:1129
+#: ../admin/sample/sample-config.php:1138
+#: ../admin/sample/sample-config.php:1156
+#: ../admin/sample/sample-config.php:1165
+#: ../admin/sample/sample-config.php:1173
+#: ../admin/sample/sample-config.php:1182
+#: ../admin/sample/sample-config.php:1190
+#: ../admin/sample/sample-config.php:1238
+#: ../admin/sample/sample-config.php:1249
+msgid "No validation can be done on this field type"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:916
+#: ../admin/sample/sample-config.php:916
+msgid "Multi Checkbox Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:925
+#: ../../library/admin/sample/sample-config.php:950
+#: ../admin/sample/sample-config.php:925 ../admin/sample/sample-config.php:950
+msgid "Multi Checkbox Option (with menu data)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:933
+#: ../admin/sample/sample-config.php:933
+msgid "Multi Checkbox Option (with sidebar data)"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:941
+#: ../admin/sample/sample-config.php:941
+msgid "Radio Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:958
+#: ../admin/sample/sample-config.php:958
+msgid "Images Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:972
+#: ../admin/sample/sample-config.php:972
+msgid "Images Option for Layout"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:974
+#: ../admin/sample/sample-config.php:974
+msgid ""
+"This uses some of the built in images, you can use them for layout options."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:988
+#: ../../library/admin/sample/sample-config.php:1001
+#: ../admin/sample/sample-config.php:988 ../admin/sample/sample-config.php:1001
+msgid "Sortable Text Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:989
+#: ../../library/admin/sample/sample-config.php:1002
+#: ../admin/sample/sample-config.php:989 ../admin/sample/sample-config.php:1002
+msgid "Define and reorder these however you want."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1014
+#: ../admin/sample/sample-config.php:1014
+msgid "Select Fields"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1020
+#: ../admin/sample/sample-config.php:1020
+msgid "Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1030
+#: ../admin/sample/sample-config.php:1030
+msgid "Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1041
+#: ../admin/sample/sample-config.php:1041
+msgid "Select Image"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1042
+#: ../admin/sample/sample-config.php:1042
+msgid "A preview of the selected image will appear underneath the select box."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1054
+#: ../admin/sample/sample-config.php:1054
+msgid "You can easily add a variety of data from WordPress."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1060
+#: ../admin/sample/sample-config.php:1060
+msgid "Categories Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1069
+#: ../admin/sample/sample-config.php:1069
+msgid "Categories Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1077
+#: ../admin/sample/sample-config.php:1077
+msgid "Pages Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1086
+#: ../admin/sample/sample-config.php:1086
+msgid "Pages Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1094
+#: ../admin/sample/sample-config.php:1094
+msgid "Tags Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1103
+#: ../admin/sample/sample-config.php:1103
+msgid "Tags Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1111
+#: ../admin/sample/sample-config.php:1111
+msgid "Menus Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1120
+#: ../admin/sample/sample-config.php:1120
+msgid "Menus Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1128
+#: ../admin/sample/sample-config.php:1128
+msgid "Post Type Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1137
+#: ../admin/sample/sample-config.php:1137
+msgid "Post Type Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1147
+#: ../admin/sample/sample-config.php:1147
+msgid "Post Type Multi Select Option + Sortable"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1148
+#: ../admin/sample/sample-config.php:1148
+msgid "This field also has sortable enabled!"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1155
+#: ../admin/sample/sample-config.php:1155
+msgid "Posts Select Option2"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1164
+#: ../admin/sample/sample-config.php:1164
+msgid "Posts Multi Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1172
+#: ../admin/sample/sample-config.php:1172
+msgid "User Role Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1181
+#: ../admin/sample/sample-config.php:1181
+msgid "Capabilities Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1189
+#: ../admin/sample/sample-config.php:1189
+msgid "Elusive Icons Select Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1191
+#: ../admin/sample/sample-config.php:1191
+msgid "Here's a list of all the elusive icons by name and icon."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1199
+#: ../../library/option-config.php:306 ../admin/sample/sample-config.php:1199
+#: ../option-config.php:306
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1200
+#: ../../library/option-config.php:307 ../admin/sample/sample-config.php:1200
+#: ../option-config.php:307
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1201
+#: ../../library/option-config.php:308 ../admin/sample/sample-config.php:1201
+#: ../option-config.php:308
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1205
+#: ../../library/option-config.php:312 ../admin/sample/sample-config.php:1205
+#: ../option-config.php:312
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1212
+#: ../../library/admin/sample/sample-config.php:1348
+#: ../../library/option-config.php:319 ../../library/option-config.php:354
+#: ../admin/sample/sample-config.php:1212
+#: ../admin/sample/sample-config.php:1348 ../option-config.php:319
+#: ../option-config.php:354
+msgid "Documentation"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1230
+#: ../admin/sample/sample-config.php:1230
+msgid "Additional Fields"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1237
+#: ../admin/sample/sample-config.php:1237
+msgid "Date Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1248
+#: ../admin/sample/sample-config.php:1248
+msgid "Button Set Option"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1258
+#: ../admin/sample/sample-config.php:1258
+msgid "This is the info field, if you want to break sections up."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1264
+#: ../../library/admin/sample/sample-config.php:1272
+#: ../admin/sample/sample-config.php:1264
+#: ../admin/sample/sample-config.php:1272
+msgid "This is a title."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1265
+#: ../admin/sample/sample-config.php:1265
+msgid "This is an info field with the warning style applied and a header."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1273
+#: ../admin/sample/sample-config.php:1273
+msgid ""
+"This is an info field with the success style applied, a header and an icon."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1285
+#: ../admin/sample/sample-config.php:1285
+msgid "Custom Field Callback"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1286
+#: ../admin/sample/sample-config.php:1286
+msgid "This is a completely unique field type"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1287
+#: ../admin/sample/sample-config.php:1287
+msgid ""
+"This is created with a callback function, so anything goes in this field. "
+"Make sure to define the function though."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1293
+#: ../admin/sample/sample-config.php:1293
+msgid "Group - BETA"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1294
+#: ../admin/sample/sample-config.php:1294
+msgid "Group any items together. Experimental. Use at your own risk."
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1295
+#: ../admin/sample/sample-config.php:1295
+msgid "Group"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1301
+#: ../admin/sample/sample-config.php:1301
+msgid "testing fold with Group"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1308
+#: ../admin/sample/sample-config.php:1308
+msgid "Text"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1309
+#: ../admin/sample/sample-config.php:1309
+msgid "Here you put your subtitle"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1315
+#: ../admin/sample/sample-config.php:1315
+msgid "Testing select"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1333
+#: ../../library/option-config.php:339 ../admin/sample/sample-config.php:1333
+#: ../option-config.php:339
+msgid "Theme Information"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1360
+#: ../../library/option-config.php:366 ../admin/sample/sample-config.php:1360
+#: ../option-config.php:366
+msgid "Theme Information 1"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1361
+#: ../../library/admin/sample/sample-config.php:1367
+#: ../../library/option-config.php:367 ../../library/option-config.php:373
+#: ../admin/sample/sample-config.php:1361
+#: ../admin/sample/sample-config.php:1367 ../option-config.php:367
+#: ../option-config.php:373
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1366
+#: ../../library/option-config.php:372 ../admin/sample/sample-config.php:1366
+#: ../option-config.php:372
+msgid "Theme Information 2"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1371
+#: ../../library/option-config.php:377 ../admin/sample/sample-config.php:1371
+#: ../option-config.php:377
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1394
+#: ../../library/admin/sample/sample-config.php:1395
+#: ../admin/sample/sample-config.php:1394
+#: ../admin/sample/sample-config.php:1395
+msgid "Sample Options"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1466
+#: ../admin/sample/sample-config.php:1466
+#, php-format
+msgid ""
+"<p>Did you know that Redux sets a global variable for you? To access any of "
+"your saved options from within your code you can use your global variable: "
+"<strong>$%1$s</strong></p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1468
+#: ../admin/sample/sample-config.php:1468
+msgid ""
+"<p>This text is displayed above the options panel. It isn't required, but "
+"more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../../library/admin/sample/sample-config.php:1472
+#: ../admin/sample/sample-config.php:1472
+msgid ""
+"<p>This text is displayed below the options panel. It isn't required, but "
+"more info is always better! The footer_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../../library/bones.php:235 ../../library/bones.php:237
+#: ../../library/bones.php:253 ../../library/bones.php:315 ../bones.php:235
+#: ../bones.php:237 ../bones.php:253 ../bones.php:315
+msgid "The Main Menu"
+msgstr "Huvudmenyn"
+
+#: ../../library/bones.php:236 ../../library/bones.php:284 ../bones.php:236
+#: ../bones.php:284
+msgid "The Secondary Menu"
+msgstr ""
+
+#: ../../library/bones.php:370 ../bones.php:370
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: ../../library/bones.php:418 ../bones.php:418
+msgid "Read"
+msgstr "Läs"
+
+#: ../../library/bones.php:418 ../bones.php:418
+msgid "Read More"
+msgstr "Läs mer"
+
+#: ../../library/bones.php:433 ../bones.php:433
+#, php-format
+msgid "Posts by %s"
+msgstr "Poster av %s"
+
+#: ../../library/brew.php:14 ../brew.php:14
+msgid "Continue Reading..."
+msgstr "Fortsätt"
+
+#: ../../library/brew.php:28 ../brew.php:28
+msgid "&laquo"
+msgstr "&laquo"
+
+#: ../../library/custom-post-type.php:31 ../custom-post-type.php:31
 msgid "Custom Types"
 msgstr "Special inläggstyp"
 
-#: library/custom-post-type.php:25
+#: ../../library/custom-post-type.php:32 ../custom-post-type.php:32
 msgid "Custom Post"
 msgstr "Special inlägg"
 
-#: library/custom-post-type.php:26
+#: ../../library/custom-post-type.php:33 ../custom-post-type.php:33
+msgid "All Custom Posts"
+msgstr ""
+
+#: ../../library/custom-post-type.php:34 ../custom-post-type.php:34
 msgid "Add New"
 msgstr "Lägg till"
 
-#: library/custom-post-type.php:27
+#: ../../library/custom-post-type.php:35 ../custom-post-type.php:35
 msgid "Add New Custom Type"
 msgstr "Lägg till ny inläggstyp"
 
-#: library/custom-post-type.php:28
+#: ../../library/custom-post-type.php:36 ../custom-post-type.php:36
 msgid "Edit"
 msgstr "Editera"
 
-#: library/custom-post-type.php:29
+#: ../../library/custom-post-type.php:37 ../custom-post-type.php:37
 msgid "Edit Post Types"
 msgstr "Editera inläggstyper"
 
-#: library/custom-post-type.php:30
+#: ../../library/custom-post-type.php:38 ../custom-post-type.php:38
 msgid "New Post Type"
 msgstr "Ny inläggstyp"
 
-#: library/custom-post-type.php:31
+#: ../../library/custom-post-type.php:39 ../custom-post-type.php:39
 msgid "View Post Type"
 msgstr "Se inläggstyp"
 
-#: library/custom-post-type.php:32
+#: ../../library/custom-post-type.php:40 ../custom-post-type.php:40
 msgid "Search Post Type"
 msgstr "Sök inläggstyp"
 
-#: library/custom-post-type.php:33
+#: ../../library/custom-post-type.php:41 ../custom-post-type.php:41
 msgid "Nothing found in the Database."
 msgstr "Ingenting kan hittas i databasen"
 
-#: library/custom-post-type.php:34
+#: ../../library/custom-post-type.php:42 ../custom-post-type.php:42
 msgid "Nothing found in Trash"
 msgstr "Ingenting kan hittas i papperskorgen"
 
-#: library/custom-post-type.php:37
+#: ../../library/custom-post-type.php:45 ../custom-post-type.php:45
 msgid "This is the example custom post type"
 msgstr "Det här är ett exempel på inläggstyp"
 
-#: library/custom-post-type.php:73
+#: ../../library/custom-post-type.php:82 ../custom-post-type.php:82
 msgid "Custom Categories"
 msgstr "Egna kategorier"
 
-#: library/custom-post-type.php:74
+#: ../../library/custom-post-type.php:83 ../custom-post-type.php:83
 msgid "Custom Category"
 msgstr "Egen kategori"
 
-#: library/custom-post-type.php:75
+#: ../../library/custom-post-type.php:84 ../custom-post-type.php:84
 msgid "Search Custom Categories"
 msgstr "Sök i de egna kategorierna"
 
-#: library/custom-post-type.php:76
+#: ../../library/custom-post-type.php:85 ../custom-post-type.php:85
 msgid "All Custom Categories"
 msgstr "Alla egna kategorier"
 
-#: library/custom-post-type.php:77
+#: ../../library/custom-post-type.php:86 ../custom-post-type.php:86
 msgid "Parent Custom Category"
 msgstr "Nedärvd egen kategori"
 
-#: library/custom-post-type.php:78
+#: ../../library/custom-post-type.php:87 ../custom-post-type.php:87
 msgid "Parent Custom Category:"
 msgstr "Nedärvd egen kategori:"
 
-#: library/custom-post-type.php:79
+#: ../../library/custom-post-type.php:88 ../custom-post-type.php:88
 msgid "Edit Custom Category"
 msgstr "Editera egen kategori"
 
-#: library/custom-post-type.php:80
+#: ../../library/custom-post-type.php:89 ../custom-post-type.php:89
 msgid "Update Custom Category"
 msgstr "Uppdatera egen kategori"
 
-#: library/custom-post-type.php:81
+#: ../../library/custom-post-type.php:90 ../custom-post-type.php:90
 msgid "Add New Custom Category"
 msgstr "Lägg till ny egen kategori"
 
-#: library/custom-post-type.php:82
+#: ../../library/custom-post-type.php:91 ../custom-post-type.php:91
 msgid "New Custom Category Name"
 msgstr "Namn på ny egen kategori"
 
-#: library/custom-post-type.php:95
+#: ../../library/custom-post-type.php:105 ../custom-post-type.php:105
+msgid "Custom Tags"
+msgstr "Special taggar"
+
+#: ../../library/custom-post-type.php:106 ../custom-post-type.php:106
 msgid "Custom Tag"
 msgstr "Egen tagg"
 
-#: library/custom-post-type.php:96
+#: ../../library/custom-post-type.php:107 ../custom-post-type.php:107
 msgid "Search Custom Tags"
 msgstr "Sök egna taggar"
 
-#: library/custom-post-type.php:97
+#: ../../library/custom-post-type.php:108 ../custom-post-type.php:108
 msgid "All Custom Tags"
 msgstr "Alla egna taggar"
 
-#: library/custom-post-type.php:98
+#: ../../library/custom-post-type.php:109 ../custom-post-type.php:109
 msgid "Parent Custom Tag"
 msgstr "Nedärvd egen tagg"
 
-#: library/custom-post-type.php:99
+#: ../../library/custom-post-type.php:110 ../custom-post-type.php:110
 msgid "Parent Custom Tag:"
 msgstr "Nedärvd egen tagg:"
 
-#: library/custom-post-type.php:100
+#: ../../library/custom-post-type.php:111 ../custom-post-type.php:111
 msgid "Edit Custom Tag"
 msgstr "Editera egen tagg"
 
-#: library/custom-post-type.php:101
+#: ../../library/custom-post-type.php:112 ../custom-post-type.php:112
 msgid "Update Custom Tag"
 msgstr "Uppdatera egen tagg"
 
-#: library/custom-post-type.php:102
+#: ../../library/custom-post-type.php:113 ../custom-post-type.php:113
 msgid "Add New Custom Tag"
 msgstr "Lägg till ny egen tagg"
 
-#: library/custom-post-type.php:103
+#: ../../library/custom-post-type.php:114 ../custom-post-type.php:114
 msgid "New Custom Tag Name"
 msgstr "Nytt namn på egen tagg"
 
+#: ../../library/metabox/example-functions.php:25
+#: ../metabox/example-functions.php:25
+msgid "Test Metabox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:33
+#: ../../library/metabox/example-functions.php:263
+#: ../metabox/example-functions.php:33 ../metabox/example-functions.php:263
+msgid "Test Text"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:34
+#: ../../library/metabox/example-functions.php:44
+#: ../../library/metabox/example-functions.php:51
+#: ../../library/metabox/example-functions.php:58
+#: ../../library/metabox/example-functions.php:66
+#: ../../library/metabox/example-functions.php:73
+#: ../../library/metabox/example-functions.php:85
+#: ../../library/metabox/example-functions.php:91
+#: ../../library/metabox/example-functions.php:98
+#: ../../library/metabox/example-functions.php:113
+#: ../../library/metabox/example-functions.php:121
+#: ../../library/metabox/example-functions.php:128
+#: ../../library/metabox/example-functions.php:134
+#: ../../library/metabox/example-functions.php:140
+#: ../../library/metabox/example-functions.php:152
+#: ../../library/metabox/example-functions.php:163
+#: ../../library/metabox/example-functions.php:174
+#: ../../library/metabox/example-functions.php:185
+#: ../../library/metabox/example-functions.php:193
+#: ../../library/metabox/example-functions.php:200
+#: ../../library/metabox/example-functions.php:208
+#: ../../library/metabox/example-functions.php:214
+#: ../../library/metabox/example-functions.php:226
+#: ../../library/metabox/example-functions.php:264
+#: ../../library/metabox/example-functions.php:283
+#: ../../library/metabox/example-functions.php:290
+#: ../../library/metabox/example-functions.php:297
+#: ../../library/metabox/example-functions.php:303
+#: ../../library/metabox/example-functions.php:309
+#: ../../library/metabox/example-functions.php:315
+#: ../../library/metabox/example-functions.php:321
+#: ../../library/metabox/example-functions.php:338
+#: ../metabox/example-functions.php:34 ../metabox/example-functions.php:44
+#: ../metabox/example-functions.php:51 ../metabox/example-functions.php:58
+#: ../metabox/example-functions.php:66 ../metabox/example-functions.php:73
+#: ../metabox/example-functions.php:85 ../metabox/example-functions.php:91
+#: ../metabox/example-functions.php:98 ../metabox/example-functions.php:113
+#: ../metabox/example-functions.php:121 ../metabox/example-functions.php:128
+#: ../metabox/example-functions.php:134 ../metabox/example-functions.php:140
+#: ../metabox/example-functions.php:152 ../metabox/example-functions.php:163
+#: ../metabox/example-functions.php:174 ../metabox/example-functions.php:185
+#: ../metabox/example-functions.php:193 ../metabox/example-functions.php:200
+#: ../metabox/example-functions.php:208 ../metabox/example-functions.php:214
+#: ../metabox/example-functions.php:226 ../metabox/example-functions.php:264
+#: ../metabox/example-functions.php:283 ../metabox/example-functions.php:290
+#: ../metabox/example-functions.php:297 ../metabox/example-functions.php:303
+#: ../metabox/example-functions.php:309 ../metabox/example-functions.php:315
+#: ../metabox/example-functions.php:321 ../metabox/example-functions.php:338
+msgid "field description (optional)"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:43
+#: ../metabox/example-functions.php:43
+msgid "Test Text Small"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:50
+#: ../metabox/example-functions.php:50
+msgid "Test Text Medium"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:57
+#: ../metabox/example-functions.php:57
+msgid "Website URL"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:65
+#: ../metabox/example-functions.php:65
+msgid "Test Text Email"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:72
+#: ../metabox/example-functions.php:72
+msgid "Test Time"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:78
+#: ../../library/metabox/example-functions.php:79
+#: ../metabox/example-functions.php:78 ../metabox/example-functions.php:79
+msgid "Time zone"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:84
+#: ../metabox/example-functions.php:84
+msgid "Test Date Picker"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:90
+#: ../metabox/example-functions.php:90
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:97
+#: ../metabox/example-functions.php:97
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:112
+#: ../metabox/example-functions.php:112
+msgid "Test Money"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:120
+#: ../metabox/example-functions.php:120
+msgid "Test Color Picker"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:127
+#: ../metabox/example-functions.php:127
+msgid "Test Text Area"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:133
+#: ../metabox/example-functions.php:133
+msgid "Test Text Area Small"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:139
+#: ../metabox/example-functions.php:139
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:145
+#: ../metabox/example-functions.php:145
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:146
+#: ../metabox/example-functions.php:146
+msgid "This is a title description"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:151
+#: ../metabox/example-functions.php:151
+msgid "Test Select"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:156
+#: ../../library/metabox/example-functions.php:167
+#: ../../library/metabox/example-functions.php:178
+#: ../metabox/example-functions.php:156 ../metabox/example-functions.php:167
+#: ../metabox/example-functions.php:178
+msgid "Option One"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:157
+#: ../../library/metabox/example-functions.php:168
+#: ../../library/metabox/example-functions.php:179
+#: ../metabox/example-functions.php:157 ../metabox/example-functions.php:168
+#: ../metabox/example-functions.php:179
+msgid "Option Two"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:158
+#: ../../library/metabox/example-functions.php:169
+#: ../../library/metabox/example-functions.php:180
+#: ../metabox/example-functions.php:158 ../metabox/example-functions.php:169
+#: ../metabox/example-functions.php:180
+msgid "Option Three"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:162
+#: ../metabox/example-functions.php:162
+msgid "Test Radio inline"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:173
+#: ../metabox/example-functions.php:173
+msgid "Test Radio"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:184
+#: ../metabox/example-functions.php:184
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:192
+#: ../metabox/example-functions.php:192
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:199
+#: ../metabox/example-functions.php:199
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:207
+#: ../metabox/example-functions.php:207
+msgid "Test Checkbox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:213
+#: ../metabox/example-functions.php:213
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:218
+#: ../metabox/example-functions.php:218
+msgid "Check One"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:219
+#: ../metabox/example-functions.php:219
+msgid "Check Two"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:220
+#: ../metabox/example-functions.php:220
+msgid "Check Three"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:225
+#: ../metabox/example-functions.php:225
+msgid "Test wysiwyg"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:232
+#: ../metabox/example-functions.php:232
+msgid "Test Image"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:233
+#: ../metabox/example-functions.php:233
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:238
+#: ../metabox/example-functions.php:238
+msgid "Multiple Files"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:239
+#: ../metabox/example-functions.php:239
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:245
+#: ../metabox/example-functions.php:245
+msgid "oEmbed"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:246
+#: ../metabox/example-functions.php:246
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:255
+#: ../metabox/example-functions.php:255
+msgid "About Page Metabox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:276
+#: ../metabox/example-functions.php:276
+msgid "User Profile Metabox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:282
+#: ../metabox/example-functions.php:282
+msgid "Extra Info"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:289
+#: ../metabox/example-functions.php:289
+msgid "Avatar"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:296
+#: ../metabox/example-functions.php:296
+msgid "Facebook URL"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:302
+#: ../metabox/example-functions.php:302
+msgid "Twitter URL"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:308
+#: ../metabox/example-functions.php:308
+msgid "Google+ URL"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:314
+#: ../metabox/example-functions.php:314
+msgid "Linkedin URL"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:320
+#: ../metabox/example-functions.php:320
+msgid "User Field"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:333
+#: ../metabox/example-functions.php:333
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: ../../library/metabox/example-functions.php:337
+#: ../metabox/example-functions.php:337
+msgid "Site Background Color"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_ajax.php:47
+#: ../metabox/helpers/cmb_Meta_Box_ajax.php:47
+msgid "Please Try Again"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_ajax.php:131
+#: ../metabox/helpers/cmb_Meta_Box_ajax.php:131
+msgid "Remove Embed"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_ajax.php:134
+#: ../metabox/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:150
+#: ../metabox/helpers/cmb_Meta_Box_types.php:150
+msgid "Add Row"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:523
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:563
+#: ../metabox/helpers/cmb_Meta_Box_types.php:523
+#: ../metabox/helpers/cmb_Meta_Box_types.php:563
+msgid "Add or Upload File"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:536
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:582
+#: ../metabox/helpers/cmb_Meta_Box_types.php:536
+#: ../metabox/helpers/cmb_Meta_Box_types.php:582
+msgid "Remove Image"
+msgstr ""
+
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../../library/metabox/helpers/cmb_Meta_Box_types.php:590
+#: ../metabox/helpers/cmb_Meta_Box_types.php:547
+#: ../metabox/helpers/cmb_Meta_Box_types.php:590
+msgid "File:"
+msgstr ""
+
+#: ../../library/metabox/init.php:243 ../metabox/init.php:243
+msgid "Clear"
+msgstr ""
+
+#: ../../library/metabox/init.php:245 ../metabox/init.php:245
+msgid "Select Color"
+msgstr ""
+
+#: ../../library/metabox/init.php:246 ../metabox/init.php:246
+msgid "Current Color"
+msgstr ""
+
+#: ../../library/metabox/init.php:1185 ../metabox/init.php:1185
+msgid "Save"
+msgstr ""
+
+#: ../../library/option-config.php:268 ../option-config.php:268
+msgid "Content Settings"
+msgstr ""
+
+#: ../../library/option-config.php:269 ../option-config.php:269
+msgid "Choose how certain content is displayed"
+msgstr ""
+
+#: ../../library/option-config.php:274 ../option-config.php:274
+msgid "Breadcrumbs"
+msgstr ""
+
+#: ../../library/option-config.php:275 ../option-config.php:275
+msgid "Turn breadcrumbs on or off (site-wide)"
+msgstr ""
+
+#: ../../library/option-config.php:281 ../option-config.php:281
+msgid "Author Profiles"
+msgstr ""
+
+#: ../../library/option-config.php:288 ../option-config.php:288
+msgid "Display Featured Images"
+msgstr ""
+
+#: ../../library/option-config.php:400 ../option-config.php:400
+msgid "BREW Options"
+msgstr ""
+
+#: ../../library/option-config.php:401 ../option-config.php:401
+msgid "Brew Options"
+msgstr ""
+
+#: ../../library/option-config.php:457 ../option-config.php:457
+msgid ""
+"<p>Welcome to the BREW options framework (powered by Redux).  Simple options "
+"are provided.  You may add more by configuring option-config.php</p>"
+msgstr ""
+
+#: ../../library/option-config.php:461 ../option-config.php:461
+msgid "<p>Open the pod bay doors, please.</p>"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:14
+#: ../partials/booking-hotellradmannen.php:14
+msgid "Stay at Hotell Rådmannen"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:20
+#: ../partials/booking-hotellradmannen.php:20
+msgid "Check-in Date"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:24
+#: ../partials/booking-hotellradmannen.php:24
+msgid "Check-out Date"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:30
+#: ../partials/booking-hotellradmannen.php:30
+msgid "Search room"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:32
+#: ../partials/booking-hotellradmannen.php:32
+msgid "Opens in a new window"
+msgstr ""
+
+#: ../../library/partials/booking-hotellradmannen.php:32
+#: ../partials/booking-hotellradmannen.php:32
+msgid "Price calendar"
+msgstr ""
+
+#: ../../library/sidebars/sidebar.php:12 ../sidebars/sidebar.php:12
+msgid "Please activate some Widgets."
+msgstr "Vänligen aktivera några Widgets."
+
+#: ../../page-full-width.php:49 ../../page.php:46
+msgid "Not Found"
+msgstr "Kan inte hittas"
+
+#: ../../page-full-width.php:52 ../../page.php:49
+msgid "Sorry, but the requested resource was not found on this site."
+msgstr "Tyvärr, det som efterfrågas kan inte hittas på denna sajt."
+
+#: ../../search.php:10
+msgid "Search Results for"
+msgstr ""
+
+#: ../../search.php:30
+msgid "Read more on"
+msgstr "Läs mera på"
+
+#: ../../searchform.php:12 ../../searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: ../../single-custom_type.php:32 ../../taxonomy-custom_cat.php:34
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under "
+"%4$s."
+msgstr ""
+
+#: ../../single-custom_type.php:44
+msgid "Custom Tags:"
+msgstr ""
+
+#: ../../single-custom_type.php:64
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: ../../single.php:80
+msgid "<i class=\"fa fa-caret-left\"></i>"
+msgstr ""
+
+#: ../../single.php:86
+msgid "<i class=\"fa fa-caret-right\"></i>"
+msgstr ""
+
+#: ../../single.php:108
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: ../../taxonomy-custom_cat.php:40
+msgid "Read More &raquo;"
+msgstr ""
+
+#: ../../taxonomy-custom_cat.php:73
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#~ msgid "Response"
+#~ msgstr "Svar"
+
+#~ msgid "Responses"
+#~ msgstr "Svar"
+
+#~ msgid "One"
+#~ msgstr "En"
+
+#~ msgid "No"
+#~ msgstr "Nej"
+
+#~ msgid "to"
+#~ msgstr "till"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Det går inte längre att kommentera."
+
+#~ msgid "You must be"
+#~ msgstr "Du måste vara"
+
+#~ msgid "logged in"
+#~ msgstr "inloggad"
+
+#~ msgid "to post a comment"
+#~ msgstr "för att kunna kommentera"
+
+#~ msgid "Your Name"
+#~ msgstr "Ditt namn"
+
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "Your Email"
+#~ msgstr "Din E-post"
+
+#~ msgid "will not be published"
+#~ msgstr "kommer inte att bli publicerad"
+
+#~ msgid "Your Website"
+#~ msgstr "Din webbsajt"
+
+#~ msgid "Your Comment Here..."
+#~ msgstr "Din kommentar här..."
+
+#~ msgid "Submit Comment"
+#~ msgstr "Skicka kommentar"
+
+#~ msgid "You can use these tags"
+#~ msgstr "Du kan använda dessa taggar"
+
+#~ msgid "Page %s"
+#~ msgstr "Sida %s"
+
+#~ msgid "Posted"
+#~ msgstr "Skriven"
+
+#~ msgid "by"
+#~ msgstr "av"
+
+#~ msgid "filed under"
+#~ msgstr "sorterad under"
+
+#~ msgid "Read more"
+#~ msgstr "Läs mera"
+
+#~ msgid "Search for:"
+#~ msgstr "Sök efter:"
+
+#~ msgid "Search the Site..."
+#~ msgstr "Sök på sajten..."
+
+#~ msgid "Epic 404 - Article Not Found"
+#~ msgstr "Episk 404 - Sidan kan inte hittas"
+
+#~ msgid ""
+#~ "The article you were looking for was not found, but maybe try looking "
+#~ "again!"
+#~ msgstr "Inlägget du letade efter kan inte hittas. Försök igen!"
+
+#~ msgid "Search Results for:"
+#~ msgstr "Sök resultat för:"
+
+#~ msgid "Tag"
+#~ msgstr "Tagg"
+
+#~ msgid "Read the rest of this entry"
+#~ msgstr "Läs resten av detta inlägg"
+
+#~ msgid "Sorry, no attachments matched your criteria."
+#~ msgstr "Tyvärr, inga bilagor matchade din förfrågan"
+
+#~ msgid "is powered by"
+#~ msgstr "superkrafter via"
+
+#~ msgid "Read more &raquo;"
+#~ msgstr "Läs mera &raquo;"

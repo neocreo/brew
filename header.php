@@ -54,7 +54,7 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
+              <a id="branding" class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo('name'); ?> | <?php bloginfo('description'); ?>" rel="homepage"><?php bloginfo('name'); ?> | <span><?php bloginfo('description'); ?></span></a>
 
             </div>
 
