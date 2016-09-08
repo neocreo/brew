@@ -3,32 +3,11 @@
 
         <div class="container">
 
-        <div id="footer-wrapper">
-
           <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
-              <?php endif; ?>
-            </div> <!-- end widget1 -->
-
-            <div class="col-sm-6 col-md-3">
-              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-2') ) : ?>
-              <?php endif; ?>
-            </div> <!-- end widget1 -->
-
-            <div class="col-sm-6 col-md-3">
-              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-3') ) : ?>
-              <?php endif; ?>
-            </div> <!-- end widget1 -->
-
-            <div class="col-sm-6 col-md-3">
-              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-4') ) : ?>
-              <?php endif; ?>
-            </div> <!-- end widget1 -->
-
-          </div> <!-- end .row -->
-
-        </div> <!-- end #footer-wrapper -->
+            <?php get_template_part('library/parts/part','clients') ?>
+            <?php get_template_part('library/sidebars/sidebar','footer') ?>
+            
+          </div>
 
         </div> <!-- end .container -->
       </div> <!-- end #footer-widgets -->
@@ -36,12 +15,11 @@
       <div id="sub-floor">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 copyright">
-              &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>
-            </div>
-            <div class="col-md-4 col-md-offset-4 attribution">
-              <a href="http://www.danvswild.com/brew" target="_blank">BREW</a> theme by <a target="_blank" href="http://www.danvswild.com">Dan vs Wild</a>
-            </div>
+           <nav role="navigation">
+                  <?php //bones_supportive_nav(); ?>
+            </nav>
+            <?php //bones_secondary_nav(); ?>
+            <p class="source-org copyright text-center">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?></p>
           </div> <!-- end .row -->
         </div>
       </div>

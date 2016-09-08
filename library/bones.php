@@ -133,6 +133,7 @@ function bones_scripts_and_styles() {
     wp_register_script( 'bones-modernizr', get_template_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
+    wp_register_style('neo-fonts','https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,700', array(), '', 'all');
     wp_register_style( 'bones-stylesheet', get_template_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
     // ie-only style sheet
@@ -154,6 +155,7 @@ function bones_scripts_and_styles() {
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
+    wp_enqueue_style( 'neo-fonts' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style( 'bones-ie-only' );
 
@@ -196,6 +198,37 @@ function bones_theme_support() {
 	    'admin-head-callback' => '',
 	    'admin-preview-callback' => ''
 	    )
+	);
+	//wp custom header - set a logo in the backend
+	add_theme_support('custom-header',
+		array(
+			'default-image' => '',
+			'random-default'         => false,
+			'width'                  => 470,
+			'height'                 => 130,
+			'flex-height'            => true,
+			'flex-width'             => true,
+			'default-text-color'     => '',
+			'header-text'            => true,
+			'uploads'                => true,
+			'wp-head-callback'       => '',
+			'admin-head-callback'    => '',
+			'admin-preview-callback' => ''
+		)
+	);
+
+	//wp custom logo - set a logo in the backend
+	add_theme_support('custom-logo',
+		array(
+			'width'                  => 265,
+			'height'                 => 265,
+			'flex-height'            => true,
+			'flex-width'             => true,
+			'default-text-color'     => '',
+			'header-text'            => array( 'site-title', 'site-description' ),
+			'uploads'                => true,
+			
+		)
 	);
 
 	// rss thingy

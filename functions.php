@@ -63,7 +63,12 @@ require_once( 'library/bones.php' ); // if you remove this, bones will break
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
-require_once( 'library/custom-post-type.php' ); // you can disable this if you like
+// USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
+//require_once( 'library/clients-post-type.php' );
+//require_once( 'library/testimonials-post-type.php' );
+//require_once( 'library/portfolio-post-type.php' );
+//require_once( 'library/services-post-type.php' );
+//require_once( 'library/promotions-post-type.php' );
 /*
 3. library/admin.php
 	- removing some default WordPress dashboard widgets
@@ -81,9 +86,17 @@ require_once( 'library/custom-post-type.php' ); // you can disable this if you l
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
-add_image_size( 'post-featured', 750, 300, true );
+add_image_size( 'content-image', 640, 640, true );
+add_image_size( 'tiny-image', 80, 80, false );
+add_image_size( 'tiny-thumb', 80, 80, false );
+add_image_size( 'small-thumb', 150, 150, true );
+add_image_size( 'medium-thumb', 256, 256, false );
+add_image_size( 'promo-thumb', 256, 256, false );
+add_image_size( 'large-thumb', 350, 350, true );
+add_image_size( 'top-image', 1140, 300, true );
+add_image_size( 'portfolio-image', 1000, 1000, false );
+add_image_size( 'box-list-image', 350, 350, false );
+add_image_size( 'page-image', 640, 640, false );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -103,63 +116,55 @@ for the 600 x 100 image:
 You can change the names and dimensions to whatever
 you like. Enjoy!
 */
+add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
+
+function bones_custom_image_sizes( $sizes ) {
+		return array_merge( $sizes, array(
+			'tiny-thumb' => __('80 by 80'),
+			'small-thumb' => __('150 by 150'),
+			'medium-thumb' => __('256 by 256'),
+			'large-thumb' => __('350 by 350'),
+			'top-image' => __('1140 by 300'),
+			'content-image' => __('640 by 640'),
+		) );
+}
+
 
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
-	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-
-
-// add footer widgets
-
-  register_sidebar(array(
-    'id' => 'footer-1',
-    'name' => __( 'Footer Widget 1', 'bonestheme' ),
-    'description' => __( 'The first footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-  register_sidebar(array(
-    'id' => 'footer-2',
-    'name' => __( 'Footer Widget 2', 'bonestheme' ),
-    'description' => __( 'The second footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-  register_sidebar(array(
-    'id' => 'footer-3',
-    'name' => __( 'Footer Widget 3', 'bonestheme' ),
-    'description' => __( 'The third footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
-
-    register_sidebar(array(
-    'id' => 'footer-4',
-    'name' => __( 'Footer Widget 4', 'bonestheme' ),
-    'description' => __( 'The fourth footer widget.', 'bonestheme' ),
-    'before_widget' => '<div id="%1$s" class="widget widgetFooter %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
-    'after_title' => '</h4>',
-  ));
+	$widgets = array (
+		
+		array(
+			'name' => __( 'Frontpage', 'bonestheme' ),
+			'id' => 'sidebar-frontpage',
+			'desc' => __( 'Only visible on frontpage', 'bonestheme' ) ),
+		array(
+			'name' =>__( 'Subpage', 'bonestheme' ),
+			'id' => 'sidebar-subpage',
+			'desc' => __( 'Visible on subpages in a column', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Header', 'bonestheme' ),
+			'id' => 'sidebar-header',
+			'desc' => __( 'At the top of the page', 'bonestheme' ) ),
+		array(
+			'name' => __( 'Footer', 'bonestheme' ),
+			'id' => 'sidebar-footer',
+			'desc' => __( 'At the far bottom on the page', 'bonestheme' ) ),
+		);
+		/* Loop through the array and add our Widgetised areas */
+		foreach ($widgets as $widget) {
+			register_sidebar( array(
+				'name' => $widget['name'],
+				'id' => $widget['id'],
+				'description' => $widget['desc'],
+				'before_widget' => '<aside id="%1$s" class=" widget-container %2$s col-xs-12 col-sm-6 col-md-4 col-lg-3">',
+				'after_widget' => '</aside>',
+				'before_title' => '<h3  class="widget-title">',
+				'after_title' => '</h3>',
+			) );
+		}
 
 	/*
 	to add more sidebars or widgetized areas, just copy
@@ -188,7 +193,49 @@ function bones_register_sidebars() {
 } // don't remove this bracket!
 
 
+/*
+* neocreo specific
+*/
 
+/*No generator*/
+function no_generator() { return ''; }  
+add_filter( 'the_generator', 'no_generator' );
+
+
+// Search Form
+function bones_wpsearch($form) {
+		$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+		<label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
+		<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search the Site...','bonestheme').'" />
+		<button type="submit" id="searchsubmit" >'. esc_attr__('Search') .'</button>
+		</form>';
+		return $form;
+} // don't remove this bracket!
+
+// get taxonomies terms links
+function custom_taxonomies_terms_links() {
+	global $post, $post_id;
+	// get post by post id
+	$post = &get_post($post->ID);
+	// get post type by post
+	$post_type = $post->post_type;
+	// get post type taxonomies
+	$taxonomies = get_object_taxonomies($post_type);
+	foreach ($taxonomies as $taxonomy) {
+		// get the terms related to post
+		$terms = get_the_terms( $post->ID, $taxonomy );
+		if ( !empty( $terms ) ) {
+		
+			$out = array();
+			foreach ( $terms as $term )
+			{
+				$out[] = '<a href="' .get_term_link($term->slug, $taxonomy) .'">'.$term->name.'</a>';
+			}
+			$return = '<div id="categories" class="hidden">' . join( ', ', $out ) . '</div>';
+		}
+	}
+	return $return;
+}
 
 
 /************* COMMENT LAYOUT *********************/

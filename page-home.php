@@ -6,44 +6,64 @@ Template Name: Home Page Template
 
 <?php get_header(); ?>
 
-<div class="homebanner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h1>BREW for Wordpress</h1>
-        <p>A free and open-source starter theme based on Bones and Bootstrap 3</p>
-        <p><a href="http://www.github.com/slightlyoffbeat/brew" target="_blank" class="btn btn-default btn-lg">Github</a>
-          <a href="http://danvswild.com" target="_blank" class="btn btn-lg btn-primary">Author</a></p>
-      </div>
-    </div><!-- end .row-->
-  </div> <!-- end .container-->
-</div> <!-- end #banner-->
+
 
 <div class="container">
-  <div class="row text-center">
-    
-    <!--Section 1-->
-    <div class="col-sm-4 about">
-      <i class="fa fa-laptop fa-4x light-gray"></i>
-      <h3>Built with Bootstrap</h3>
-      <p>Enjoy Wordpress with all of the benefits of Bootstrap.  Quickly build themes while utilizing one of the most powerful frameworks available on the web.</p>
-    </div>
-    
-    <!--Section 2-->
-    <div class="col-sm-4 about">
-      <i class="fa fa-github-square fa-4x light-gray"></i>
-      <h3>Free and Open-Source</h3>
-      <p>BREW pulls together some of the best open source projects in to one awesome starter theme.  Feel free to fork, edit and contribute.</p>
-    </div>
-    
-    <!--Section 3-->
-    <div class="col-sm-4 about">
-      <i class="fa fa-flag fa-4x light-gray"></i>
-      <h3>Over 350 Icons</h3>
-      <p>Font Awesome 4 support is already baked in.  Quickly and easily place icons in menus, buttons, headers, lists and more.</p>
-    </div>
-    
-  </div>
+
+        <div id="content" class="clearfix row">
+        
+          <div id="main" class="col-md-8 clearfix" role="main">
+
+          <?php get_template_part( 'breadcrumb' ); ?>
+
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            
+            <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+              
+              <header class="page-head article-header">
+                
+                <div class=""><h1 class="page-title entry-title" itemprop="headline"><?php the_title(); ?></h1></div>
+              
+              </header> <!-- end article header -->
+            
+              <section class="page-content entry-content clearfix" itemprop="articleBody">
+                <?php the_content(); ?>
+            
+              </section> <!-- end article section -->
+              
+              <footer>
+        
+                <?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","bonestheme") . ':</span> ', ', ', '</p>'); ?>
+                
+              </footer> <!-- end article footer -->
+            
+            </article> <!-- end article -->
+                        
+            <?php endwhile; ?>    
+            
+            <?php else : ?>
+            
+            <article id="post-not-found">
+                <header>
+                  <h1><?php _e("Not Found", "bonestheme"); ?></h1>
+                </header>
+                <section class="post_content">
+                  <p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
+                </section>
+                <footer>
+                </footer>
+            </article>
+            
+            <?php endif; ?>
+        
+          </div> <!-- end #main -->
+
+          <?php get_sidebar(); ?>
+      
+        </div> <!-- end #content -->
+
+
+ <?php //get_template_part('library/parts/part','portfolio'); ?>
 </div>
 
 <?php get_footer(); ?>

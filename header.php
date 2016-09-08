@@ -44,17 +44,30 @@
     <header class="header">
 
       <nav role="navigation">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              	<span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
+              <h2 class="navbar-brand"  title="<?php echo get_bloginfo( 'name' ); echo get_bloginfo( 'tagline' ); ?>" >
+              
+					<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo( ) ) {
+							the_custom_logo();
+						} else{
+							echo get_bloginfo('name');
+							echo '<small>&ndash; '.get_bloginfo( 'tagline').'</small>';
+						}
+					?>
+				
+						
+					
+              </h2>
 
             </div>
 

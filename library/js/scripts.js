@@ -57,6 +57,22 @@ jQuery(document).ready(function($) {
         $('.comment img[data-gravatar]').each(function(){
             $(this).attr('src',$(this).attr('data-gravatar'));
         });
+
+        function shrinklogo() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = $('.navbar-brand');
+                if (distanceY > shrinkOn) {
+                    header.addClass('smaller');
+                } else {
+                    if (header.hasClass('smaller')) {
+                        header.removeClass('smaller')
+                    }
+                }
+            });
+        }
+        //shrinklogo();
         
     }
     
