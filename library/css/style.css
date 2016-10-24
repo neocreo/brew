@@ -276,8 +276,9 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #efefef;
@@ -291,18 +292,21 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #0067B0;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #1297E0;
   text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+a:visited{
+  color: #CA2C68;
 }
 figure {
   margin: 0;
@@ -361,8 +365,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 500;
+  font-family: 'Bree Serif', Times, serif;
+  font-weight: 400;
   line-height: 1.1;
   color: inherit;
 }
@@ -463,6 +467,12 @@ h5,
 h6,
 .h6 {
   font-size: 12px;
+}
+.navbar h1,
+.navbar h2,
+.navbar h3,
+.navbar h4{
+  margin: 0;
 }
 p {
   margin: 0 0 10px;
@@ -577,6 +587,11 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
+ul.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -634,7 +649,8 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #cecece;
+  background-color: #eaeaea;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -3755,7 +3771,25 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
+.navbar-brand img{
+  width:auto;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+h2.navbar-brand{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 @media (min-width: 768px) {
+  .navbar-brand.smaller img{
+    width:auto;
+    height: 50px;
+  }
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -4611,6 +4645,70 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+.columns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: space-between;
+  align-content: flex-start;
+  margin-left:  0;
+  margin-right:  0;
+}
+.columns > *{
+  flex:  0 1 auto; /*shorthand - first if an element shall grow, then shrink and the base size*/
+  align-self: auto; /*override align-items*/
+  /*Note that float, clear and vertical-align have no effect on a flex item.*/
+  float:  none;
+  padding: 0;
+
+}
+.columns > * img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.image-horisontal-list > *{
+  align-self: center;
+  padding:  5px;
+}
+
+.image-list{}
+
+.image-list > *{
+  background-color: #ffffff;
+  height: 285px;
+  border:  1px #eaeaea solid;
+  overflow: hidden;
+
+}
+.image-list > * h6{
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  background-color:  rgba(255,255,255,0);
+  color:  #ffffff;
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 285px;
+}
+.image-list > * h6 a,
+.image-list > * h6 a:hover,
+.image-list > * h6 a:focus,
+.image-list > * h6 a:visited{
+  background-color:  rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+.image-list > *:hover h6{
+  opacity: 1;
+}
+
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
@@ -7633,10 +7731,10 @@ Stylesheet: Footer
 
 ******************************************************************/
 #footer {
-  border-top: 5px solid #428bca;
-  background: #3b3b3b;
+  border-top: 5px solid #CA2C68;
+  background: #505050;
   padding-top: 30px;
-  margin-top: 60px;
+  margin-top: 0;
   clear: both;
   color: #aaa;
 }
@@ -7661,16 +7759,18 @@ Stylesheet: Footer
   margin-bottom: 30px;
 }
 #sub-floor {
-  color: #aaa;
-  background: #292929;
+  color: #c0c0c0;
+  background: #303030;
   padding: 10px 0;
 }
 .copyright {
-  text-align: center;
+  text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 @media (min-width: 992px) {
   .copyright {
-    text-align: left;
+   
   }
 }
 .attribution {
@@ -7728,9 +7828,7 @@ These are the styles for posts, pages, archive, & blog index
   margin: 0 0 20px 0;
   border-radius: 0px;
   background: #fff;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border: 1px solid #ddd;
+  
 }
 /*******************************
 03. ENTRY HEADER

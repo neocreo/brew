@@ -197,6 +197,11 @@ function bones_register_sidebars() {
 * neocreo specific
 */
 
+// add pdf print support to post type 'product'
+if(function_exists('set_pdf_print_support')) {
+  set_pdf_print_support(array('post', 'page', 'neo_client', 'neo_portfolio'));
+}
+
 /*No generator*/
 function no_generator() { return ''; }  
 add_filter( 'the_generator', 'no_generator' );
